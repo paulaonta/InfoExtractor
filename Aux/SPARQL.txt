@@ -1,0 +1,100 @@
+SELECT ?symptoms ?causes ?icd10 ?icd9 ?meshId
+WHERE{
+ dbr:Rheumatoid_arthritis dbp:symptoms  ?symptoms . 
+ dbr:Rheumatoid_arthritis dbp:causes  ?causes . 
+ dbr:Rheumatoid_arthritis dbo:icd10  ?icd10 . 
+ dbr:Rheumatoid_arthritis dbo:icd9  ?icd9 . 
+ dbr:Rheumatoid_arthritis dbo:meshId  ?meshId. 
+
+}
+
+SELECT ?symptoms ?causes ?icd10 ?icd9 ?meshId
+WHERE{
+ {dbr:Rheumatoid_arthritis dbp:symptoms  ?symptoms . }
+UNION
+ {dbr:Rheumatoid_arthritis dbp:causes  ?causes . }
+UNION
+ {dbr:Rheumatoid_arthritis dbo:icd10  ?icd10 . }
+UNION
+ {dbr:Rheumatoid_arthritis dbo:icd9  ?icd9 . }
+UNION
+ {dbr:Rheumatoid_arthritis dbo:meshId  ?meshId. }
+}
+
+
+
+//conseguir el link en diferentes idiomas--> hacer un split.
+//cogerlo como string y luego 
+SELECT ?x{
+ dbr:Rheumatoid_arthritis owl:sameAs ?x.
+  FILTER(strstarts(str(?x), "http://es.dbpedia.org/resource/"))
+}
+
+//WIKIDATA
+
+SELECT DISTINCT ?disease ?diseaseLabel ?symptomsLabel ?pruebasLabel ?causeLabel ?diagnosisLabel ?icd9 ?icd10 ?umls ?mesh ?umlsLabel WHERE {
+  OPTIONAL { ?disease wdt:Q12136 ?finding. }
+  OPTIONAL { ?disease wdt:P780 ?symptoms. }
+  OPTIONAL { ?disease wdt:P828 ?cause. }
+  OPTIONAL { ?disease wdt:P1692 ?icd9. }
+  OPTIONAL { ?disease wdt:P4229 ?icd10. }
+  OPTIONAL { ?disease wdt:P2892 ?umls. }
+  OPTIONAL { ?disease wdt:P923 ?diagnosis. }
+  OPTIONAL { ?disease wdt:P486 ?mesh. }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "es". }
+  
+}
+
+esto funciona bien pero el problema es que no aprece todo en orden. es decir puede salir al final una enferemedad con los sintomas que le quedan que ha apreceido la rimero. mirar el code como hacerlo porque se complica la cosa
+
+
+
+SELECT DISTINCT ?disease ?diseaseLabel ?symptomsLabel ?pruebasLabel ?causeLabel ?diagnosisLabel ?icd9 ?icd10 ?umls ?mesh WHERE {
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "es". }
+  {
+    ?disease p:P31 ?statement0.
+    ?statement0 (ps:P31/(wdt:P279*)) wd:Q12136.
+  }
+  UNION
+  {
+    ?disease p:P31 ?statement1.
+    ?statement1 (ps:P31/(wdt:P279*)) wd:Q18123741.
+  }
+     OPTIONAL { ?disease wdt:P780 ?symptoms. }
+    OPTIONAL { ?disease wdt:P828 ?cause. }
+    OPTIONAL { ?disease wdt:P923 ?diagnosis. }
+    OPTIONAL { ?disease wdt:P1692 ?icd9. }
+    OPTIONAL { ?disease wdt:P4229 ?icd10. }
+    OPTIONAL { ?disease wdt:P2892 ?umls. }
+    OPTIONAL { ?disease wdt:P486 ?mesh. }
+}  ORDER BY (?disease)
+    
+    
+?disease ?diseaseLabel ?causeLabel ?diagnosisLabel ?icd9 ?icd10 ?umls ?mesh ?m 
+     WHERE {
+        ?disease wdt:P31 ?m. 
+        ?m wdt:P279 wd:Q12136.
+      OPTIONAL { ?disease wdt:P828 ?cause. }
+      OPTIONAL { ?disease wdt:P923 ?diagnosis. }
+      OPTIONAL { ?disease wdt:P1692 ?icd9. }
+      OPTIONAL { ?disease wdt:P4229 ?icd10. }
+      OPTIONAL { ?disease wdt:P2892 ?umls. }
+      OPTIONAL { ?disease wdt:P486 ?mesh. }
+      SERVICE wikibase:label { bd:serviceParam wikibase:language "es". }
+    }
+    ORDER BY (?disease)
+    
+    
+    
+SELECT DISTINCT ?diseaseLabel ?causeLabel ?diagnosisLabel ?icd9 ?icd10 ?umls ?mesh 
+         WHERE {
+            ?disease wdt:P279* wd:Q12136.
+          OPTIONAL { ?disease wdt:P828 ?cause. }
+          OPTIONAL { ?disease wdt:P923 ?diagnosis. }
+          OPTIONAL { ?disease wdt:P1692 ?icd9. }
+          OPTIONAL { ?disease wdt:P4229 ?icd10. }
+          OPTIONAL { ?disease wdt:P2892 ?umls. }
+          OPTIONAL { ?disease wdt:P486 ?mesh. }
+          SERVICE wikibase:label { bd:serviceParam wikibase:language "es". }
+        }
+        ORDER BY (?disease)

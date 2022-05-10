@@ -1,0 +1,7 @@
+connect:
+ssh -Y pontalvilla001@158.227.70.190
+
+copiar:
+scp archivo.txt usuario@dominio.com:/home/usuario
+scp ./Escritorio/ikasiker/allDiseases.py  pontalvilla001@158.227.70.190:/home/pontalvilla001/allDiseases.py
+
