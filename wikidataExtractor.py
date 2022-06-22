@@ -5,7 +5,7 @@ import csv
 from qwikidata.sparql import (get_subclasses_of_item,
                               return_sparql_query_results)
 
-languages = ['en']#, 'es', 'eu', 'ca', 'fr']
+languages = ['ca', 'fr', 'es', 'eu'] #[ 'en']
 
 def convertDictToArray(res):
     select_term = ""
@@ -71,13 +71,6 @@ def getValues(first_row, array):
 
 sparql = SPARQLWrapper("https://query.wikidata.org/")
 
-# create file for log
-file = 'errors_log'
-errorFile = './' + file
-if not os.path.exists(errorFile):
-    os.makedirs(os.path.dirname(errorFile), exist_ok=True)
-
-
 try:
     sparql_query = ''' SELECT ?item2 ?item2Label
         WHERE
@@ -85,7 +78,7 @@ try:
         ?item (wdt:P279*) wd:Q12136. # subclass of
         ?item2 (wdt:P31) ?item. # instance of
         SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". } # Helps get the label in your language, if not, then en language
-        }'''
+        } '''
     res = return_sparql_query_results(sparql_query)
     first_row, prop = convertDictToArray(res)
 
@@ -134,6 +127,12 @@ for lang in languages:
     if not os.path.exists(mydirname):
         os.makedirs(os.path.dirname(mydirname), exist_ok=True)
 
+    # create file for log
+    file = 'errors_log_' + lang
+    errorFile = './' + file
+    if not os.path.exists(errorFile):
+        os.makedirs(os.path.dirname(errorFile), exist_ok=True)
+
     # open the csv file
     myFile = open(mydirname, 'w')
     writer = csv.writer(myFile)
@@ -143,7 +142,7 @@ for lang in languages:
         prop_num = wdt[i]
         try:
             sparql_query = ''' SELECT DISTINCT ?diseaseLabel ?symptomsLabel ?treatmentLabel ?differentFromLabel ?riskLabel
-             ?causeLabel ?diagnosisLabel ?icd9 ?icd10 ?umls ?mesh 
+             ?causeLabel ?diagnosisLabel ?icd9 ?icd10 ?umls ?mesh ?nci ?article
              WHERE {
                 ?disease wdt:* wd:''' + prop_num + '''.
               OPTIONAL { ?disease wdt:P780 ?symptoms. }
@@ -156,6 +155,12 @@ for lang in languages:
               OPTIONAL { ?disease wdt:P4229 ?icd10. }
               OPTIONAL { ?disease wdt:P2892 ?umls. }
               OPTIONAL { ?disease wdt:P486 ?mesh. }
+              OPTIONAL { ?disease wdt:P1748 ?nci. } 
+              OPTIONAL {
+              ?article schema:about ?disease .
+              ?article schema:inLanguage "''' + lang + '''".
+              ?article schema:isPartOf <https://'''+lang+'''.wikipedia.org/> .
+            }
               SERVICE wikibase:label { bd:serviceParam wikibase:language "''' + lang + '''". }
             }
             '''
@@ -171,7 +176,7 @@ for lang in languages:
                 lista2.append(lista)
         except:
             errorCount += 1
-            if errorCount == 5:
+            if errorCount == 10:
                 #append in the logger
                 myFile = open(errorFile, 'a')
                 myFile.write("This disease: \"" +prop[1][i] + "\"" + " (" + prop_num + ") can't be load\n")
