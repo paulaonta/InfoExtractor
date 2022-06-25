@@ -1,7 +1,10 @@
 import csv
 from urllib.request import urlopen
 import bs4
+from definitions import define2
 
+mydirname, nci_pos, symptom_pos, nci_link_first_part, nci_link_second_part = define2()
+first = True
 
 # Function to convert
 def listToString(s):
@@ -19,25 +22,21 @@ def listToString(s):
    # return string
    return str1
 
-folder = 'diseases_info_en.csv'
-mydirname = './' + folder
-first = True
-nci_pos = 11
-symptom_pos = 1
-nci_link_first_part = "https://ncit.nci.nih.gov/ncitbrowser/pages/concept_details.jsf?dictionary=NCI_Thesaurus&version=22.05e&code="
-nci_link_second_part = "&ns=ncit&type=relationship&key=null&b=1&n=0&vse=null"
-
+#open csv file
 mycsv = csv.reader(open(mydirname))
-csv_array = []
 
+csv_array = []
+#for each line in the csv file
 for line in mycsv:
    i, errorCount = 0, 0
    if first:
       first = False
+      line.insert(symptom_pos+2, "symptomLabel_NCI")
    else:
       text = line[nci_pos] #get the NCI ID
+      new_symptoms_array = [ ]
       if len(text) != 0 and len(text) != 1: #if we have the id
-         code_array = text.split(",")
+         code_array = text.split(",") #get the nci id codes
          while i < len(code_array):
             code = code_array[i]
             # complete the link
@@ -56,7 +55,7 @@ for line in mycsv:
                   if next: #if TRUE--> get the symptoms
                      next = False
 
-                     #get symptoms
+                     #get symptoms of the csv
                      text_symptoms = line[symptom_pos]
 
                      if len(text_symptoms) == 0 or len(text_symptoms) == 1 or text_symptoms == None: #the aren't symptoms
@@ -65,19 +64,17 @@ for line in mycsv:
                         text_symptoms = text_symptoms.split(",")
 
                      try:
-                        new_symptoms = (row.find('a').next_element).split(",")
+                        new_symptoms = (row.find('a').next_element)
                      except:
                         print("error: row hasn't got next_element")
                         new_symptoms = " "
                         text_symptoms = []
 
-                     #see which symptoms are not in the csv and then add
-                     for symptom in new_symptoms:
-                        if symptom not in text_symptoms: #if the isn't add
-                           line.pop(symptom_pos)
-                           text_symptoms.append(symptom)
-
-                     line.insert(symptom_pos, listToString(text_symptoms))
+                     #see which symptoms are not in the csv
+                     new_symptoms_array = new_symptoms.split(",")
+                     for symptom in new_symptoms_array:
+                        if symptom  in text_symptoms: #if the is remove
+                           new_symptoms_array.remove(symptom)
 
                   elif 'Disease_May_Have_Finding' in row.getText() or 'Disease_Has_Finding' in row.get_text(): #row has the symptom
                      next = True
@@ -89,7 +86,7 @@ for line in mycsv:
                   errorCount = 0
                   i += 1
                pass
-
+      line.insert(symptom_pos+2, listToString(new_symptoms_array))
    csv_array.append(line)
 
 #insert the new symptoms in the csv

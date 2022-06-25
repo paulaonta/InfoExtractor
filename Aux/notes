@@ -1,0 +1,11 @@
+list of codes:
+Q102322953
+
+SELECT ?item2 ?itemLabel 
+                WHERE
+
+                { ?item (wdt:P279*) wd:Q8294850. #physiological plant disorders 
+
+
+                ?item2 (wdt:P31) ?item. # instance of
+}
