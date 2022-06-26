@@ -1,55 +1,66 @@
-from SPARQLWrapper import SPARQLWrapper, JSON, N3, XML, CSV
-import os
-import numpy
-import csv
-from qwikidata.sparql import (get_subclasses_of_item,
-                              return_sparql_query_results)
-from definitions import define
+import os, csv
+from urllib.request import urlopen
+import bs4
 
-def convertDictToArray(res):
-    select_term = ""
-    i = 0
-    first_row = []
-    array = []
-    for result in res["head"]["vars"]:
-        select_term = result
-        array.insert(i, [])
-        # this is the first row of the csv file
-        first_row.append(result)
-        for r in res["results"]["bindings"]:
-            try:
-                string1 = r[select_term]["value"]
-                array[i].append(string1)
-            except:
-                array[i].append(" ")
-                pass
+def createFile(path):
+    if not os.path.exists(mydirname):
+        os.makedirs(os.path.dirname(mydirname), exist_ok=True)
+
+def createDirectory(path):
+    if not os.path.exists(path):
+        os.mkdir(path)
+
+
+#alphabetical_list = ['0-9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q',
+                    # 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+alphabetical_list = ['Q','Y','Z']
+partial_link = "https://en.wikipedia.org/wiki/List_of_diseases_"
+next = False
+i, errorCount = 0, 0
+
+wiki_directory = "./wikipediaLinks"
+createDirectory(wiki_directory)
+
+while i < len(alphabetical_list):
+    alpha = alphabetical_list[i]
+    link = partial_link + "(" + alpha + ")"
+
+    #create a file to save all links for each letter
+    folder = 'wikipedia_links_' + alpha +'.csv'
+    mydirname = wiki_directory + "/" + folder
+    createFile(mydirname)
+
+    # open the csv file
+    myFile = open(mydirname, 'w')
+    writer = csv.writer(myFile)
+
+    writer.writerow(['Name', 'Wikipedia link (en)'])
+
+    try:
+        # open the link
+        soup = bs4.BeautifulSoup(urlopen(link), features="lxml")
+        # find tags by CSS class
+        content = soup.find("span", class_="toctext")
+        errorCount = 0
         i += 1
 
-    return first_row, array
+        span = soup.find_all("span", id=content)
+        for s in span:
+            li = s.find_all_next("li")
+            for elem in li:
+                if "li" in str(elem):
+                    link_tag = elem.find_next('a')
+                    name = link_tag.text
+                    link = link_tag.get('href')
 
-def makeQuery(query):
-    res = return_sparql_query_results(query)
-    first_row, prop = convertDictToArray(res)
-    return first_row, prop
+                    if ("/wiki" in link or "/w" in link) and name != "Lists of diseases" and name != "edit" : #if we have a disease
+                        row = [name, "https://en.wikipedia.org" + link]
+                        writer.writerow(row)
 
-query = '''SELECT ?item2 ?itemLabel 
-                WHERE
-                { ?item (wdt:P279*) wd:Q8294850. #physiological plant disorders 
-                ?item2 (wdt:P31) ?item. # instance of }'''
-
-languages, sparql_query_prop, sparql_query_prop_del, codes = define()
-sparql = SPARQLWrapper("https://query.wikidata.org/")
-
-
-first_row, prop = makeQuery(sparql_query_prop)
-first_row, prop1 = makeQuery(sparql_query_prop_del)
-print(str(len(prop[1])))
-print(str(len(prop1[1])))
-
-#remove the elements in prop1 that there are in prop
-for elem in prop1[0]:
-    if elem in prop[0]:
-        prop[0].remove(elem)
-print(str(len(prop[0])))
-print(str(len(prop[1]) - len(prop1[1])))
-final_prop_code = [elem.split("http://www.wikidata.org/entity/")[1] for elem in prop[0]]
+    except:
+        errorCount += 1
+        if errorCount == 5:
+            print("error: an error occurs while opening the link")
+            errorCount = 0
+            i += 1
+        pass

@@ -34,7 +34,7 @@ for line in mycsv:
       line.insert(symptom_pos+2, "symptomLabel_NCI")
    else:
       text = line[nci_pos] #get the NCI ID
-      new_symptoms_array = [ ]
+      new_symptoms_array = []
       if len(text) != 0 and len(text) != 1: #if we have the id
          code_array = text.split(",") #get the nci id codes
          while i < len(code_array):
@@ -64,17 +64,16 @@ for line in mycsv:
                         text_symptoms = text_symptoms.split(",")
 
                      try:
-                        new_symptoms = (row.find('a').next_element)
+                        new_symptoms = (row.find('a').next_element).split(",")
+
+                        # see which symptoms are not in the csv
+                        for symptom in new_symptoms:
+                           if symptom not in text_symptoms:  # if the is remove
+                              new_symptoms_array.append(symptom)
                      except:
                         print("error: row hasn't got next_element")
                         new_symptoms = " "
                         text_symptoms = []
-
-                     #see which symptoms are not in the csv
-                     new_symptoms_array = new_symptoms.split(",")
-                     for symptom in new_symptoms_array:
-                        if symptom  in text_symptoms: #if the is remove
-                           new_symptoms_array.remove(symptom)
 
                   elif 'Disease_May_Have_Finding' in row.getText() or 'Disease_Has_Finding' in row.get_text(): #row has the symptom
                      next = True
