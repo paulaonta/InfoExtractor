@@ -11,8 +11,11 @@ def createDirectory(path):
         os.mkdir(path)
 
 
+'''
 alphabetical_list = ['0-9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q',
                      'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+'''
+alphabetical_list = ['Q', 'Y', 'Z']
 partial_link = "https://en.wikipedia.org/wiki/List_of_diseases_"
 next = False
 i, errorCount = 0, 0
@@ -23,6 +26,7 @@ createDirectory(wiki_directory)
 while i < len(alphabetical_list):
     alpha = alphabetical_list[i]
     link = partial_link + "(" + alpha + ")"
+
     #create a file to save all links for each letter
     folder = 'wikipedia_links_' + alpha +'.csv'
     mydirname = wiki_directory + "/" + folder
@@ -38,11 +42,15 @@ while i < len(alphabetical_list):
         # open the link
         soup = bs4.BeautifulSoup(urlopen(link), features="lxml")
         # find tags by CSS class
-        content = soup.find("span", class_="toctext")
+        if soup.find("span", class_="toctext") is not None:
+            content = soup.find("span", class_="toctext").getText()
+        else:
+            content = alpha
+
         errorCount = 0
         i += 1
-
         span = soup.find_all("span", id=content)
+
         for s in span:
             li = s.find_all_next("li")
             for elem in li:
@@ -51,7 +59,7 @@ while i < len(alphabetical_list):
                     name = link_tag.text
                     link = link_tag.get('href')
 
-                    if ("/wiki" in link or "/w" in link) and name != "Lists of diseases" and name != "edit" : #if we have a disease
+                    if "/wiki" in link  and name != "Lists of diseases" and name != "edit" : #if we have a disease
                         row = [name, "https://en.wikipedia.org" + link]
                         writer.writerow(row)
 

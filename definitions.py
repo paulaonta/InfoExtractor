@@ -1,5 +1,5 @@
 def define():
-    languages = ['es', 'eu']#, 'ca', 'fr']# 'es', 'eu']
+    languages = ['es', 'eu', 'ca', 'fr', 'en']
 
     sparql_query_prop = ''' SELECT ?item2 ?item2Label
                 WHERE
@@ -82,4 +82,16 @@ def define2():
     nci_link_second_part = "&ns=ncit&type=relationship&key=null&b=1&n=0&vse=null"
 
     return mydirname, nci_pos, symptom_pos, nci_link_first_part, nci_link_second_part
+
+def define3():
+    folder = 'diseases_info_en.csv'
+    mydirname = './emaitza/' + folder
+    wiki_directory = "./wikipediaLinks"
+    wikiD_link_pos = 19
+    wikiP_link_pos = 1
+    errors_pathD = 'errors_link_wikidata'
+    errors_pathP = 'errors_link_wikipedia'
+
+    return mydirname, wiki_directory, wikiD_link_pos, wikiP_link_pos, errors_pathD, errors_pathP
+
 

@@ -118,7 +118,7 @@ for lang in languages:
     # create csv file for each language
     createFile(csv_path)
     # create file to save the errors for each language
-    createFile(csv_path)
+    createFile(errors_path)
 
     # open the csv file
     myFile = open(csv_path, 'w')

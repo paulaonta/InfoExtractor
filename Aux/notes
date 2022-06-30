@@ -9,3 +9,18 @@ SELECT ?item2 ?itemLabel
 
                 ?item2 (wdt:P31) ?item. # instance of
 }
+
+SELECT ?item2 ?itemLabel 
+                WHERE
+
+                { ?item (wdt:P279*) wd:Q65091757. #transport accident disorders 
+
+
+                ?item2 (wdt:P31) ?item. # instance of
+}
+
+Q17450153
+
+Q2662861
+
+Q3049298

@@ -1,66 +1,100 @@
-import os, csv
-from urllib.request import urlopen
-import bs4
+from SPARQLWrapper import SPARQLWrapper, JSON, N3, XML, CSV
+import os
+import numpy
+import csv
+from qwikidata.sparql import (get_subclasses_of_item,
+                              return_sparql_query_results)
 
-def createFile(path):
-    if not os.path.exists(mydirname):
-        os.makedirs(os.path.dirname(mydirname), exist_ok=True)
-
-def createDirectory(path):
-    if not os.path.exists(path):
-        os.mkdir(path)
-
-
-#alphabetical_list = ['0-9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q',
-                    # 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
-alphabetical_list = ['Q','Y','Z']
-partial_link = "https://en.wikipedia.org/wiki/List_of_diseases_"
-next = False
-i, errorCount = 0, 0
-
-wiki_directory = "./wikipediaLinks"
-createDirectory(wiki_directory)
-
-while i < len(alphabetical_list):
-    alpha = alphabetical_list[i]
-    link = partial_link + "(" + alpha + ")"
-
-    #create a file to save all links for each letter
-    folder = 'wikipedia_links_' + alpha +'.csv'
-    mydirname = wiki_directory + "/" + folder
-    createFile(mydirname)
-
-    # open the csv file
-    myFile = open(mydirname, 'w')
-    writer = csv.writer(myFile)
-
-    writer.writerow(['Name', 'Wikipedia link (en)'])
-
-    try:
-        # open the link
-        soup = bs4.BeautifulSoup(urlopen(link), features="lxml")
-        # find tags by CSS class
-        content = soup.find("span", class_="toctext")
-        errorCount = 0
+def convertDictToArray(res):
+    select_term = ""
+    i = 0
+    first_row = []
+    array = []
+    for result in res["head"]["vars"]:
+        select_term = result
+        array.insert(i, [])
+        # this is the first row of the csv file
+        first_row.append(result)
+        for r in res["results"]["bindings"]:
+            try:
+                string1 = r[select_term]["value"]
+                array[i].append(string1)
+            except:
+                array[i].append(" ")
+                pass
         i += 1
 
-        span = soup.find_all("span", id=content)
-        for s in span:
-            li = s.find_all_next("li")
-            for elem in li:
-                if "li" in str(elem):
-                    link_tag = elem.find_next('a')
-                    name = link_tag.text
-                    link = link_tag.get('href')
+    return first_row, array
 
-                    if ("/wiki" in link or "/w" in link) and name != "Lists of diseases" and name != "edit" : #if we have a disease
-                        row = [name, "https://en.wikipedia.org" + link]
-                        writer.writerow(row)
+def makeQuery(query):
+    res = return_sparql_query_results(query)
+    first_row, prop = convertDictToArray(res)
+    return first_row, prop
 
-    except:
-        errorCount += 1
-        if errorCount == 5:
-            print("error: an error occurs while opening the link")
-            errorCount = 0
-            i += 1
-        pass
+def is_repeted(text, i):
+    if lang == 'nci':
+        csv_path = './emaitza/diseases_info_en_nci.csv'
+    else:
+        csv_path = './emaitza/diseases_info_' + lang + '.csv'
+    mycsv_wikidata = csv.reader(open(csv_path))
+    j = 0
+    for line in mycsv_wikidata:
+        if j <= i:
+            j += 1
+        else:
+            text2 = line[1]
+            if text2 == text:
+                return True
+    return False
+
+
+sparql = SPARQLWrapper("https://query.wikidata.org/")
+languages = ['en', 'eu', 'ca', 'fr', 'es', 'nci']
+
+sparql_query = ''' SELECT ?item2 ?itemLabel 
+                        WHERE {                                    
+                           { ?item (wdt:P279*) wd:Q65091757.}
+                            UNION
+                           { ?item (wdt:P279*) wd:Q8294850.}#physiological plant disorders 
+                           UNION
+                           { ?item (wdt:P279*) wd:Q9190427.} #animal diseases
+                           UNION
+                           {?item (wdt:P279*) wd:Q207791.} 
+                           ?item2 (wdt:P31) ?item. # instance of
+                        }'''
+first_row, prop = makeQuery(sparql_query)
+final_prop_code = [elem.split("http://www.wikidata.org/entity/")[1] for elem in prop[0]]
+final_prop_code.append('Q102322953')
+final_prop_code.append('Q17450153')
+final_prop_code.append('Q2662861')
+final_prop_code.append('Q2040895')
+final_prop_code.append('Q3049298')
+final_prop_code.append('Q30912812')
+final_prop_code.append('Q109270553')
+
+
+for lang in languages:
+    rows = []
+    if lang == 'nci':
+        csv_path = './emaitza/diseases_info_en_nci.csv'
+    else:
+        csv_path ='./emaitza/diseases_info_' + lang + '.csv'
+    mycsv_wikidata = csv.reader(open(csv_path))
+
+    first = True
+    i = 0
+    for line in mycsv_wikidata:
+        i += 1
+        if first:
+            first = False
+            rows.append(line)
+        else:
+            text = line[1]
+            if len(text) != 1:
+                if not is_repeted(text,i): #remove all repeted diseases
+                    if text not in final_prop_code: #remove the diseases with codes are in the query we had done before
+                        rows.append(line)
+
+    mydir = open(csv_path, 'w')
+    writer = csv.writer(mydir)
+    writer.writerows(rows)
