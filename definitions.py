@@ -86,12 +86,13 @@ def define2():
 def define3():
     folder = 'diseases_info_en.csv'
     mydirname = './emaitza/' + folder
-    wiki_directory = "./wikipediaLinks"
+    wiki_directory = "./wikipediaLinks/wikipedia_links_all.csv"
     wikiD_link_pos = 19
-    wikiP_link_pos = 1
-    errors_pathD = 'errors_link_wikidata'
-    errors_pathP = 'errors_link_wikipedia'
+    wikiP_link_pos = 3
+    also_pos = 21
+    errors_pathD = 'errors_link_wikidata.csv'
+    errors_pathP = 'errors_link_wikipedia.csv'
 
-    return mydirname, wiki_directory, wikiD_link_pos, wikiP_link_pos, errors_pathD, errors_pathP
+    return mydirname, wiki_directory, wikiD_link_pos, wikiP_link_pos, also_pos,errors_pathD, errors_pathP
 
 

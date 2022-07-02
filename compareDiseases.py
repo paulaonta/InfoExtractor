@@ -1,20 +1,17 @@
-import  csv
-import wptools
-import wikipedia as wiki
-import os
-import requests
-from urllib.request import urlopen
-import bs4
+import csv
 from definitions import define3
 
-mydirname, wiki_directory, wikiD_link_pos, wikiP_link_pos, errors_pathD, errors_pathP =  define3()
+mydirname, wiki_directory, wikiD_link_pos, wikiP_link_pos, also_pos, errors_pathD, errors_pathP = define3()
 first = True
+myErrorFile = open(errors_pathD, 'w')
+writerD = csv.writer(myErrorFile)
+writerD.writerow(['name', 'code', 'link'])
 
-def get_directory(letter):
-    directory = wiki_directory + "/wikipedia_links_" + letter + ".csv"
-    return directory
+myErrorFile = open(errors_pathP, 'a')
+writerP = csv.writer(myErrorFile)
+writerP.writerow(['name', 'link'])
 
-def contains_disease(text, directory):
+def contains_disease(text,name, directory):
     rows = []
     first = True
     contains = False
@@ -22,17 +19,18 @@ def contains_disease(text, directory):
     for line in mycsv_wikipedia:
         if first:
             first = False
-            if len(line) == 2:
+            if len(line) == 4:
                 line.insert(wikiP_link_pos+1, "Is it in wikidata?")
             rows.append(line)
         else:
             link = line[wikiP_link_pos]
-            soup = bs4.BeautifulSoup(link, features="lxml")
-            url = soup.find('a').get('href')
-            print(url)
-            if str(text) == link and len(line) == 2:
-                line.insert(wikiP_link_pos+1, "Yes")
-                contains = True
+            name_wiki = line[0]
+
+            if str(text) == link or name == name_wiki:
+                if len(line) == 4:
+                    line.insert(wikiP_link_pos+1, "Yes")
+                    contains = True
+
             rows.append(line)
 
     mydir = open(directory, 'w')
@@ -40,26 +38,59 @@ def contains_disease(text, directory):
     writer.writerows(rows)
     return contains
 
-def get_wikipedia_diseases():
-    alphabetical_list = ['0-9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q',
-                         'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
-    for alpha in alphabetical_list: #for each letter
-        directory = get_directory(alpha) #get directory
-        mycsv = csv.reader(open(directory)) #open
-        first = True
+def also_known_diseases():
+    mycsv = csv.reader(open(wiki_directory))  # open
+    first = True
+    rows = [ ]
+    # iterate the csv file
+    for line in mycsv:
+        first2 = True
+        if len(line) == 4:
+            text = ""
+        else:
+            text = line[wikiP_link_pos + 1]
 
-        #iterate the csv file
-        for line in mycsv:
-            if len(line) == 2:
-                text = ""
-            else:
-                text = line[wikiP_link_pos+1]
-            if first:
-                first = False
-            elif text != 'Yes':
-                # append in the error file
-                myErrorFile = open(errors_pathP, 'a')
-                myErrorFile.write("This disease: \"" + line[0] + " \" is not in wikidata\n")
+        if first:
+            first = False
+            rows.append(line)
+        elif text != 'Yes':
+            mycsv_wikidata = csv.reader(open(mydirname))  # open
+
+            for line2 in mycsv_wikidata:
+                if first2:
+                    first2 = False
+                else:
+                    also_known = line2[also_pos] #get the name
+                    also_known_diseases = [elem.title() for elem in also_known.split(" , ")]
+                    if len(text) != 1:
+                        if line[0].title() == "Acne vulgaris":
+                            print(also_known_diseases)
+                        if not line[0].title() in also_known_diseases:
+                            # append in the error file
+                            writerD.writerow([line2[0],line2[1],line2[wikiD_link_pos]])
+                        else:
+                            line.insert(wikiP_link_pos + 1, "Yes")
+            rows.append(line)
+    mydir = open(wiki_directory, 'w')
+    writer = csv.writer(mydir)
+    writer.writerows(rows)
+
+def get_wikipedia_diseases():
+    mycsv = csv.reader(open(wiki_directory)) #open
+    first = True
+
+    #iterate the csv file
+    for line in mycsv:
+        if len(line) == 4:
+            text = ""
+        else:
+            text = line[wikiP_link_pos+1]
+
+        if first:
+            first = False
+        elif text != 'Yes':
+            # append in the error file
+            writerP.writerow([line[0],line[wikiP_link_pos]])
 
 #open csv files
 mycsv_wikidata = csv.reader(open(mydirname))
@@ -69,22 +100,13 @@ for line in mycsv_wikidata:
         first = False
     else:
         text = line[wikiD_link_pos]  # get the link
-
+        name = line[0] #get the name
         if len(text) != 1:
-            #get the first letter and open the conrespond file
-            if '/wiki/' in text:
-                text_split = text.split('/')
-            else:
-                text_split = text.split('?title=')
-            letter = text_split[len(text_split)-1][0]
-            if letter.isnumeric():
-                letter = '0-9'
-            mycsv_wikipedia_directory = get_directory(letter.title())
-
-            if not contains_disease(text, mycsv_wikipedia_directory):
+            if not contains_disease(text, name, wiki_directory):
                 # append in the error file
-                myErrorFile = open(errors_pathD, 'a')
-                myErrorFile.write("This disease: \"" + text +"\" is not in wikipedia\n")
+                writerD.writerow([line[0],line[1],text])
 
+also_known_diseases()
 #get diseases which are in wikipedia but not in wikidata
 get_wikipedia_diseases()
+

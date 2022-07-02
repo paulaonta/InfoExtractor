@@ -1,4 +1,8 @@
-import os, csv
+import csv
+import wptools
+import wikipedia as wiki
+import os
+import requests
 from urllib.request import urlopen
 import bs4
 
@@ -11,11 +15,9 @@ def createDirectory(path):
         os.mkdir(path)
 
 
-'''
 alphabetical_list = ['0-9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q',
-                     'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
-'''
-alphabetical_list = ['Q', 'Y', 'Z']
+                    'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+
 partial_link = "https://en.wikipedia.org/wiki/List_of_diseases_"
 next = False
 i, errorCount = 0, 0
@@ -36,7 +38,7 @@ while i < len(alphabetical_list):
     myFile = open(mydirname, 'w')
     writer = csv.writer(myFile)
 
-    writer.writerow(['Name', 'Wikipedia link (en)'])
+    writer.writerow(['Name', 'Wikipedia link (en)', 'Redirected', 'Redirect link'])
 
     try:
         # open the link
@@ -59,8 +61,18 @@ while i < len(alphabetical_list):
                     name = link_tag.text
                     link = link_tag.get('href')
 
-                    if "/wiki" in link  and name != "Lists of diseases" and name != "edit" : #if we have a disease
-                        row = [name, "https://en.wikipedia.org" + link]
+                    if "class=\"mw-redirect\"" in str(link_tag):
+                        redirect = "Yes"
+
+                        # get the link of the redirect page
+                        soup1 = bs4.BeautifulSoup(urlopen("https://en.wikipedia.org" + link), features="lxml")
+                        redirect_link = soup1.find('link', rel="canonical").get('href')
+                    else:
+                        redirect = "No"
+                        redirect_link = "https://en.wikipedia.org" + link #the redirect link is the same of the web link
+
+                    if "/wiki" in link and name != "Lists of diseases" and name != "edit" : #if we have a disease
+                        row = [name, "https://en.wikipedia.org" + link, redirect, redirect_link]
                         writer.writerow(row)
 
     except:
