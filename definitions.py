@@ -90,9 +90,8 @@ def define3():
     wikiD_link_pos = 19
     wikiP_link_pos = 3
     also_pos = 21
-    errors_pathD = 'errors_link_wikidata.csv'
-    errors_pathP = 'errors_link_wikipedia.csv'
+    errors_path = 'errors_link_wikipedia.csv'
 
-    return mydirname, wiki_directory, wikiD_link_pos, wikiP_link_pos, also_pos,errors_pathD, errors_pathP
+    return mydirname, wiki_directory, wikiD_link_pos, wikiP_link_pos, also_pos,errors_path
 
 
