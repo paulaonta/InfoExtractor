@@ -1,0 +1,471 @@
+diseaseLabel,disease,symptomsLabel,symptoms,treatmentLabel,treatment,differentFromLabel,differentFrom,riskLabel,risk,causeLabel,cause,diagnosisLabel,diagnosis,icd9,icd10,umls,mesh,nci,link,description,alsoKnownAs
+acidurie 3-hydroxy-isobutyrique,Q4636563, , , , , , , , , , , , ,791.9,E71.1,C0342737,C535312, , , , 
+déficit en 3-hydroxyacyl-CoA déshydrogénase des acides gras à chaîne longue,Q24963765, , , , , , , , , , , , , , , , ,C129929,https://fr.wikipedia.org/wiki/D%C3%A9ficit_en_3-hydroxyacyl-coenzyme_A_d%C3%A9shydrog%C3%A9nase_des_acides_gras_%C3%A0_cha%C3%AEne_longue, , 
+"syndrome 48,XXYY",Q8042649, , , , , , , , , , , , ,758.81,Q98.8,C2936741, ,C89801,"https://fr.wikipedia.org/wiki/Syndrome_48,XXYY", , 
+ichtyose acquise,Q5986446, , , , , , , , , , , , , ,L85.0,C0263386,C538175,C112831, , , 
+acrocyanose,Q202283, , , , , , , , , , , , , , ,C0221347, , ,https://fr.wikipedia.org/wiki/Acrocyanose, ,cyanose périphérique
+acrospirome,Q1323187, , , , , , , , , , , , , , , ,D018250, , , , 
+mal aigu des montagnes,Q55789795, , , , , , , , , , , , ,993.2, , , , , , , 
+LAM avec maturation,Q4677940, , , , , , , , , , , , , ,C92.0,C1879321, ,C3250, , ,leucémie aiguë myéloïde avec maturation
+LAM sans maturation,Q4677942, , , , , , , , , , , , , ,C92.0,C0026998, ,C3249, , , 
+angine de Vincent,Q539465, , , , , , , , ,infection,Q166231, , ,"041.84,101",A69.1,"C0017575,C1527368",D005892,"C34637,C84722",https://fr.wikipedia.org/wiki/Angine_de_Vincent, ,"Association fuso-spirillaire,Association fuso-spirillaire de Vincent,Bouche de tranchée,Maladie de Vincent,infection à Fusobacterium"
+Q37311576,Q37311576, , , , , , , , , , , , , , , , , , ,article scientifique, 
+Q93630286,Q93630286, , , , , , , , , , , , , , , , , , , , 
+Q70720501,Q70720501, , , , , , , , , , , , , , , , , , , , 
+barotraumatisme des sinus,Q3505030, , , , , , , , , , , , , , , , , , , ,Sinusite barotraumatique
+vieillissement,Q332154, , , , ,sénescence,Q2070979, , , , , , , , ,C0001811,D000375, ,https://fr.wikipedia.org/wiki/Vieillissement,processus biologique degeneratif, 
+Agnathie,Q21071557, , , , , , , , , , , , , , , , , ,https://fr.wikipedia.org/wiki/Agnathie, , 
+agnosie,Q220322, , , , , , , , , , , , , ,"R48.1,R48.2","C0001816,C0003635",D000377,C84542,https://fr.wikipedia.org/wiki/Agnosie,"incapacité de reconnaître certains stimuli en l'absence de déficits sensoriels primaires comme la cécité ou la surdité, perte d'informations qui permettent d'interpréter certains types de sensations reçues", 
+embryopathie liée au VIH,Q24975595, , , , , , , , ,infection néonatale au VIH,Q24960226, , , , , , , , , , 
+syndrome de sevrage alcoolique,Q2914873, , ,(RS)-baclofène,Q413717, , , , ,sevrage alcoolique,Q4713265, , ,291.81, , , , ,https://fr.wikipedia.org/wiki/Syndrome_de_sevrage_alcoolique, , 
+alopécie totalis,Q4734614, , , , , , , , , , , , ,704.09,L63.0,C0263504, , , ,pelade localisée à la tête, 
+Q59619363,Q59619363, , , , , , , , , , , , , , , , , , , , 
+hémiplégie alterne,Q4063606, , , , , , , , , , , , , , ,C0278110, , , , , 
+maladie d'Alzheimer précoce,Q5326566, , ,"(±)-sélégiline,acide valproïque,alpha-tocophérol,donépézil,galantamine,rivastigmine,tacrine","Q158348,Q240642,Q402633,Q411887,Q412690,Q415081,Q421076", , , , , , , , , , , , , , , , 
+Q35247349,Q35247349, , , , , , , , , , , , , , , , , , ,article scientifique, 
+amaurose,Q285787,cécité,Q10874, , , , , , , , , , , , , , , ,https://fr.wikipedia.org/wiki/Amaurose,"perte complète de la vue, sans altération des milieux de l'œil", 
+amélogenèse imparfaite,Q461854, , , , , , , , , , , , , ,K00.5,C0002452,D000567, , , , 
+Q38572562,Q38572562, , , , , , , , , , , , , , , , , , ,article scientifique, 
+amnésie médicamenteuse,Q5308804, , , , , , , , , , , , , , ,CL1380657, , , , , 
+amnésie source,Q3614488, , , , , , , , , , , , , , , , , , ,oubli de l'origine de l'information, 
+anaphylaxie,Q168800, , ,adrénaline,Q132621, , ,Q47521917,Q47521917, , , , , , ,C0002792,D000707,C107101,https://fr.wikipedia.org/wiki/Choc_anaphylactique, ,réaction anaphylactique
+anévrisme sacciforme intracrânien,Q6058359, , , , , , , , , , , , , ,I60.7,C1835857, , , , , 
+Q55789860,Q55789860, , , , , , , , , , , , , , , , , , , , 
+ectasie annuloaortique,Q731569, , , , , , , , , , , , , , ,C0345050,C562834, , ,maladie,maladie annulo-ectasiante de l'aorte
+Q72277448,Q72277448, , , , , , , , , , , , , , , , , , , , 
+Q65361991,Q65361991, , , , , , , , , , , , , , , , , , , , 
+anorgasmie,Q1772397, , , , , , , , , , , , , , , , , ,https://fr.wikipedia.org/wiki/Anorgasmie,absence réitérée et persistante d’orgasme, 
+Q11788623,Q11788623, , , , , , , , , , , , , , , , , , , , 
+aplasie,Q5488, , , , , , , , , , , , , , ,C0243065, , ,https://fr.wikipedia.org/wiki/Aplasie,arrêt du développement d'un tissu ou d'un organe survenant après la naissance,aplasique
+réticulopénie,Q7316733, , , , , , , , , , , , , , ,C0858867, ,C113710, , ,réticulocytopénie
+apudome,Q3621073, , , , , , , , , , , , , , ,C0003650,D001079, , , , 
+sténose  de l'aqueduc de Sylvius,Q17080749, , , , , , , , , , , , , , , , , , , , 
+intoxication à l'arsenic,Q730249,"asthénie,choc circulatoire,dermatite,diarrhée,douleur abdominale,dyspnée,déshydratation,gastro-entérite,hyperpigmentation,irritation des voies respiratoires,mal de gorge,nausée,neuropathie périphérique,perte de conscience,toux,ulcération du septum nasal,vomissement,yeux rouges,érythème","Q1166142,Q127076,Q12829165,Q1292082,Q156103,Q1641068,Q178061,Q183425,Q186889,Q188008,Q194290,Q21112283,Q21117237,Q229256,Q2610154,Q35805,Q40878,Q633403,Q945238", , , , , , ,arsenic,Q871, , , , , ,D020261, ,https://fr.wikipedia.org/wiki/Intoxication_%C3%A0_l%27arsenic, , 
+maladie de Horton,Q707816,"amaigrissement,céphalée,diplopie,douleur de la mâchoire,douleur à la palpation,fatigue,fièvre","Q12680516,Q38933,Q4922732,Q718113,Q775940,Q86,Q9690","méthotrexate,prednisolone,prednisone,sumatriptan,tocilizumab","Q11426176,Q416978,Q422232,Q424972,Q425154", , , , , , , , ,446.5,M31.6,"C0039483,C1956391",D013700,C35065,https://fr.wikipedia.org/wiki/Maladie_de_Horton,maladie,"artérite gigantocellulaire,artérite géante,artérite temporale,maladie De Horton,maladie de horton"
+phénomène d'Ashman,Q4805668, , , , , , , , , , , , , , , , , , , , 
+astasie-abasie,Q9300736, , , , , , , , , , , , , , , , , , , , 
+Q35160640,Q35160640, , , , , , , , , , , , , , , , , , ,article scientifique (publié 2003), 
+athétose,Q755524, , , , ,infirmité motrice cérébrale dyskinétique,Q4813631, , , , , , , , ,"C0004158,C1845265",D001264,C116574,https://fr.wikipedia.org/wiki/Ath%C3%A9tose, ,"Athetose,Choréo-athétose"
+atrésie de l'œsophage,Q298233, , , , , , , , , , , , ,750.3,Q39.0,C0014850,D004933,C87072,https://fr.wikipedia.org/wiki/Atr%C3%A9sie_de_l%27%C5%93sophage, ,"Atresie de l'oesophage,Atrésie de l'oesophage,Atrésie œsophagienne"
+myxome auriculaire,Q4817544, , , , , , , , , , , , , , ,"C0151241,C1850635",C538262, , , , 
+communication auriculo-ventriculaire,Q4817566, , , , , , , , , , , , , , ,C0340330, , , , , 
+Trouble du traitement auditif,Q433152, , , , , , , , , , , , , , , ,D001308,C97170,https://fr.wikipedia.org/wiki/Trouble_du_traitement_auditif, , 
+spondyloarthrite axiale,Q28867094, , , , , , , , , , , , , , ,C3203547,D000089183, , ,maladie, 
+Q70486606,Q70486606, , , , , , , , , , , , , , , , , , , , 
+gastroentérite bactérienne,Q18966636, , , , , , , , , , , , , , , , ,C35483, , , 
+syndrome de Bangstad,Q4855629, , , , , , , , , , , , ,759.89,E31.8,C0342284,C537902, , , , 
+intoxication barbiturique,Q1184752, , , , , , , , , , , , , , ,C0572916, , , , , 
+migraine avec aura du tronc cérébral,Q12857771, , , , , , , , , , , , , , ,C0270860, ,C117013, , ,migraine basilaire
+Bathophobie,Q6898244, , , , , , , , , , , , , , , , , , ,phobie des profondeurs, 
+lymphome B cutané,Q5196683, , , , , , , , , , , , ,202.80, ,C1274310, , , , , 
+Q74639229,Q74639229, , , , , , , , , , , , , , , , , , , , 
+Syndrome de fasciculations bénignes,Q817298,fasciculation,Q1397878, , , , , , , , , , , , , , , ,https://fr.wikipedia.org/wiki/Syndrome_de_fasciculations_b%C3%A9nignes,tressauter, 
+dépendance aux benzodiazépines,Q380409, , , , , , , , , , , , , , , , , , ,dépendance, 
+intoxication au benzodiazépines,Q4890788, , , , , , , , ,benzodiazépine,Q83871, , , , ,C0572933, , , , , 
+syndrome de sevrage aux benzodiazépines,Q6119887, , , , , , , , , , , , , , , , , ,https://fr.wikipedia.org/wiki/Syndrome_de_sevrage_aux_benzodiaz%C3%A9pines, , 
+syndrome de Bhaskar–Jagannathan,Q4901373, , , , , , , , , , , , , , , ,C535437, , , , 
+Q80794360,Q80794360, , , , , , , , , , , , , , , , , , , , 
+thrombopathie,Q2429620, , , , , , , , , , , , , , ,C0005818,D001791, ,https://fr.wikipedia.org/wiki/Thrombopathie,désordre d’une fonction plaquettaire,thrombocytopathie
+Q65075660,Q65075660, , , , , , , , , , , , , , , , , , , , 
+Maladie des langes bleus,Q503458, , , , , , , , , , , , , ,E70.8,C0268478,C536239, ,https://fr.wikipedia.org/wiki/Maladie_des_langes_bleus, ,"Maladie Des Langes Bleus,syndrome d'hypercalcémie familiale-néphrocalcinose-indicanurie,syndrome de Drummond"
+aplasie médullaire,Q7882181, , , , , , , , , , , , , , ,CL406855,D000080983, ,https://fr.wikipedia.org/wiki/Aplasie_m%C3%A9dullaire, ,Aplasie medullaire
+bradykinésie,Q897134, , , , , , , , , , , , , , , , ,C116707, , , 
+Q95445834,Q95445834, , , , , , , , , , , , , , , , , , , , 
+maladie de Bright,Q3246646, , , , , , , , , , , , , , , , , , ,ancienne dénomination des néphrites, 
+syndrome de référence olfactive,Q4386741, , , , , , , , , , , , , , ,"CL1643562,CL1657629",C000711529, , ,crainte de sentir mauvais,"autodysosmophobie,bromidrophobie"
+trouble du sommeil du à la caféine,Q5017161, , , , , , , , , , , , , , , , , , , , 
+calcinose cutanée,Q5018783, , , , , , , , , , , , , , ,C0006664, , , , , 
+SARS-CoV-2,Q82069695, , , , ,"Covid-19,SARS-CoV,SARSr-CoV,pandémie de Covid-19,syndrome respiratoire aigu sévère","Q103177,Q278567,Q81068910,Q84263196,Q85438966", , , , , , , , , ,D000086402, ,https://fr.wikipedia.org/wiki/SARS-CoV-2,virus à l'origine de la pandémie de Covid-19,"2019-nCoV,NCoV-2019,SRAS-CoV-2,coronavirus 2 du syndrome respiratoire aigu sévère,coronavirus de Wuhan"
+Q5032332,Q5032332, , , , , , , , ,tuberculose de l'appareil génital féminin,Q18967471, , , , , , , , , , 
+maladie de Carré,Q601037, , , , ,Q11793055,Q11793055, , ,virus de la maladie de Carré,Q1637524, , , , , ,D004216, ,https://fr.wikipedia.org/wiki/Maladie_de_Carr%C3%A9,maladie virale due à un virus, 
+Q65374287,Q65374287, , , , , , , , , , , , , , , , , , , , 
+Q68923147,Q68923147, , , , , , , , , , , , , , , , , , , , 
+syndrome du soignant,Q5038976, , , , , , , , , , , , , , , , , , , , 
+Q55950267,Q55950267, , , , , , , , , , , , , , ,C1834919,C563582, , , , 
+syndrome de maladie coeliaque-calcifications cérébrales-épilepsie,Q6137184, , , , , , , , , , , , , , ,C1856930,C535496, , , , 
+rétinopathie séreuse centrale,Q1431217, , , , , , , , , , , , ,362.41,H35.7,C0730328,D056833,C115124,https://fr.wikipedia.org/wiki/Chorior%C3%A9tinopathie_s%C3%A9reuse_centrale, ,"Choriorétinopathie,choriorétinopathie séreuse centrale"
+agénésie du cervelet,Q18345210, , , , , , , , , , , , , , ,C0344488, , , , , 
+atrophie cérébelleuse,Q29643762, , , , , , , , , , , , , , ,"C0262404,C0740279,C4020873", , , , , 
+tumeur  du ventricule cérébral,Q71396405, , , , , , , , , , , , , , , ,D002551, , , , 
+Céroïde lipofuscinose neuronale infantile,Q4357262, , , , , , , , , , , , , ,E75.4,"C0268281,C2931673",C537948, , , ,"céroïde-lipofuscinose neuronale de type 1,maladie de Hagberg-Santavuori"
+MAT,MAT, , , , , , , , , , , , , , , , , , , , 
+Q70957905,Q70957905, , , , , , , , , , , , , , , , , , , , 
+Q2055121,Q2055121, , , , , , , , , , , , , , , , , , , , 
+Q26842138,Q26842138, , , , , , , , , , , , , , , , , , , , 
+Q71921582,Q71921582, , , , , , , , , , , , , , , , , , , , 
+Chlamydia trachomatis,Q131065, , , , , , , , , , , , , , , ,D002692, ,https://fr.wikipedia.org/wiki/Chlamydia_trachomatis, ,Chlamydia Trachomatis
+Chlamydia pneumoniae,Q62869737, , , , , , , , , , , , , , , , , , , , 
+Q30849793,Q30849793, , , , , , , , , , , , , , , , , , ,article scientifique (publié 1961), 
+cholestase intrahépatique familiale progressive 5,Q55785081, , , , , , , , , , , , , , ,C4310747, , , , , 
+kystes du plexus choroïdes,Q1237766, , , , , , , , , , , , , , ,C0338597, ,C4351, , , 
+choroïdite serpigineuse,Q7455142, , , , , , , , , , , , ,363.8,H30.8,C0729842, , , , , 
+trisomie,Q844903, , , , , , , , , , , , , , ,C0041107,D014314, ,https://fr.wikipedia.org/wiki/Trisomie,nombre de chromosomes anormal,"Triso,Trisomique"
+cinchonisme,Q936656, , , , , , , , ,quinine,Q189522, , , , ,C0151555, , ,https://fr.wikipedia.org/wiki/Cinchonisme,terme, 
+éosinophilie clonale,Q30314608, , , , , , , , , , , , , , , , , , , , 
+usage de cocaïne,Q5139133, , , , , , , , , , , , ,292.89,T40.5, , , , , , 
+Q21503318,Q21503318, , , , , , , , , , , , , , , , , , , , 
+Maladie des agglutinines froides,Q3961632, , , , , , , , , , , , , ,D59.1,C0175816, , ,https://fr.wikipedia.org/wiki/Maladie_des_agglutinines_froides, , 
+Cold antibody hemolytic anemia,Q5142432, , , , , , , , , , , , , , , , , , ,page d'homonymie d'un projet Wikimédia, 
+urticaire au froid,Q3552503, , , , , , , , , , , , , , , , , ,https://fr.wikipedia.org/wiki/Urticaire_au_froid, ,Allergie au froid
+Q21132183,Q21132183, , , , , , , , , , , , , , , , , , , , 
+afibrinogénémie familiale,Q5160407, , , , , , , , , , , , , , ,C0001733,D000347,C98130, , , 
+amputation congénitale,Q5160408, , , , , , , , , , , , , , ,C1857583, , , ,absence partielle ou complète  de développement d'un membre,"agénésie de membre,amputations congénitales"
+Q73105726,Q73105726, , , , , , , , , , , , , , , , , , , , 
+Q71977549,Q71977549, , , , , , , , , , , , , , , , , , , , 
+fibrose hépatique congénitale,Q1395683, , , , , , , , , , , , ,777.8, ,C0009714,C562378,C97071, , , 
+Q73433043,Q73433043, , , , , , , , , , , , , , , , , , , , 
+Q50465198,Q50465198, , , , , , , , , , , , , , , , , , ,article scientifique, 
+Q70709120,Q70709120, , , , , , , , , , , , , , , , , , , , 
+Q30314657,Q30314657, , , , , , , , , , , , , , ,CL495035, , , , , 
+crampe,Q2006818, , , , ,crise d'épilepsie,Q6279182, , , , , , , , ,C0026821,D009120,C34827,https://fr.wikipedia.org/wiki/Crampe,Contraction douloureuse et temporaire d'un muscle,"contraction musculaire involontaire,crampe musculaire,crampes"
+syndrome de Crandall,Q5181978, , , , , , , , , , , , ,704.8, ,C0432348, , , , , 
+déficit en transporteur de la créatine,Q17084842, , , , , , , , , , , , ,758.81,E72.8,C1845862,C535598,C125665, , ,"Déficit en SLC6A8,Déficit en transporteur de la créatine lié à l'X"
+Q72429825,Q72429825, , , , , , , , , , , , , , , , , , , , 
+intoxication au cyanure,Q883082,convulsion,Q852376, , , , , , ,cyanure,Q55076544, , ,989.0,T65.0, ,D003486, ,https://fr.wikipedia.org/wiki/Intoxication_au_cyanure, , 
+Cytomégalovirus,Q6946, , , , ,cytomégalovirus humain,Q6929, , , , , , , , , ,D003587, ,https://fr.wikipedia.org/wiki/Cytom%C3%A9galovirus,genre de virus à ADN opportuniste, 
+syndrome de Daentl-Townsend-Siegel,Q5208264, , , , , , , , , , , , , ,Q87.8,C2931014,C535768, , , , 
+éjaculation retardée,Q1142563, , , , , , , , , , , , , , , , , , , , 
+Q71218394,Q71218394, , , , , , , , , , , , , , , , , , , , 
+trouble de la personnalité dépressive,Q5260921, , , , ,trouble de la personnalité schizoïde,Q498237, , , , , , , , , , , , , , 
+22,22, , , , , , , , , , , , , , , , , , , , 
+dermatophytids,dermatophytids, , , , , , , , , , , , , , , , , , , , 
+syndrome diencéphalique,Q9390543,"cachexie,retard de croissance staturo-pondérale","Q1497481,Q6003455", , , , , , ,tumeur diencéphalique,Q18556087, , ,253.8,C72.8,"C0271889,C0342436", ,C116955, , ,Cachexie diencéphalique de Russell
+maladie de Dieterich,Q55790152, , , , , , , , , , , , , , ,C2931124,C536172, , , ,nécrose aseptique des têtes métacarpiennes
+hémangiomatose néonatale diffuse,Q5275418, , , , , , , , , , , , , ,Q82.8,C0474965, , , , , 
+panbronchiolite diffuse,Q3085380, , , , , , , , , , , , ,491.8,J44.8,C0878555,C536174, ,https://fr.wikipedia.org/wiki/Panbronchiolite_diffuse, , 
+intoxication à la digoxine,Q151350, , , , , , , , , , , , , ,T46.0, , , , , ,intoxication par les digitaliques
+diplopie,Q775940, , , , , , , , , , , , , , ,C0012569,D004172,C37941,https://fr.wikipedia.org/wiki/Diplopie, , 
+Q67786307,Q67786307, , , , , , , , , , , , , , , , , , , , 
+Q76884715,Q76884715, , , , , , , , , , , , , , , , , , , , 
+lupus érythémateux discoïde,Q1228801, , , , , , , , , , , , , ,L93.0,C0024138,D008179,C26820, , , 
+trouble de l'attachement de l'enfance avec désinhibition,Q3700220, , , , , , , , , , , , , , , , , , , ,"trouble réactionnel de l'attachement de la première ou de la deuxième enfance, type désinhibé"
+folliculite disséquante du cuir chevelu,Q7168463, , , , , , , , , , , , ,704.8,L08.8,C0263506,C562486, , , , 
+diverticulose,Q278158, , , , ,diverticulite du sigmoïde,Q1066061, , , , , , , , , ,D043963, ,https://fr.wikipedia.org/wiki/Diverticulose, , 
+cardiomyopathie à la doxorubicine,Q55790164, , , , , , , , ,doxorubicine,Q18936, , , , , , , , , , 
+dysbarisme,Q3709266, , , , , , , , , , , , , , ,C0004760, , , ,effet d'un changement de pression sur la santé, 
+syndrome dysexécutif,Q5319401, , , , , , , , , , , , , , ,C3840049, , , , , 
+dysfibrinogénémie,Q5319404, , , , , , , , , , , , ,286.3,D68.2,"C0272350,C1260903", ,C131659, , , 
+Q77618310,Q77618310, , , , , , , , , , , , , , , , , , ,article scientifique, 
+Q55781839,Q55781839, , , , , , , , , , , , , , ,C1857143,C565610, , , , 
+anomalie qualitative ou quantitative de la dystrophine,Q55785972, , , , , , , , , , , , , , , , , , , ,Dystrophinopathie
+infection à echovirus,Q18966558, , , , , , , , ,infection,Q166231, , , , , ,D004457, , , , 
+syndrome des jambes sans repos,Q916280, , ,"Q47521685,carbamazépine,clonazépam,gabapentine,gabapentine énacarbil,pramipexole,prégabaline,ropinirole,rotigotine","Q407988,Q410352,Q410412,Q411985,Q412174,Q420590,Q421304,Q47521685,Q5515257",hypokinésie,Q1036662, , , , , , ,"333.94,333.99",G25.81,C0035258,D012148,C84501,https://fr.wikipedia.org/wiki/Syndrome_des_jambes_sans_repos, ,"SJSR,jambes sans repos,syndrome de Wittmaack-Ekbom"
+encoprésie,Q653027, , , , , , , , , , , , , , , ,D004688,C92568,https://fr.wikipedia.org/wiki/Encopr%C3%A9sie, ,Encopresie
+endocrinopathie,Q3725133, , , , ,maladie endocrinienne,Q2661443, , , , , , , , , , , , , , 
+déficit en énolase,Q5379381, , , , , , , , , , , , , , , , , , , , 
+entomophthoramycoses,Q5380626, , ,"amphotéricine B,itraconazole","Q411229,Q412223", , , , ,infection,Q166231, , , , ,C1396717,C000656785,C77212, ,maladie,mycoses à entomophthorales
+envenimation par la vipère fer-de-lance de la Martinique,Q55790206, , , , , , , , ,morsure de serpent,Q68854, , , , , , , , , ,Envenimation par le trigonocéphale
+cystite à éosinophiles,Q16969155, , , , , , , , , , , , ,595.89, ,C0742965, , , , , 
+myocardite à éosinophiles,Q48770946, , , , , , , , , , , , , , ,C0151788, , , , , 
+Épilepsie partielle continue,Q4898733, , , , , , , , , , , , ,"345.7,345.70", ,C0085543,D017036, ,https://fr.wikipedia.org/wiki/%C3%89pilepsie_partielle_continue, , 
+Q68584496,Q68584496, , , , , , , , , , , , , , , , , , , , 
+érythroplasie,Q897843, , , , , , , , , , , , , , ,C0014818,D004919,C3025, , , 
+Infection entéropathogène à Escherichia coli,Q13419512, , , , , , , , , , , , , , , ,D054308, , , , 
+ésophorie,Q5398647, , , , , , , , , , , , , , , , , , , , 
+carence en acides gras essentiels,Q3961670, , , , ,Fads,Q16782245, , , , , , , , ,C0342919, , , , ,syndrome de Burr
+exencéphalie,Q1774245, , , , , , , , , , , , , , , , , , , , 
+anaphylaxie induite par l’exercice physique,Q25399683, , , , , , , , , , , , , , ,C0344183, , , , ,anaphylaxie induite par l'exercice
+syndrome de péroné en serpentin-rein polykystique,Q7455128, , , , , , , , , , , , , , , ,C537586, , , ,"Incurvation serpentine du péroné,Syndrome d'Exner"
+Exophorie,Q3062042, , , , , , , , , , , , , , , , , ,https://fr.wikipedia.org/wiki/Exophorie, , 
+Q70066275,Q70066275, , , , , , , , , , , , , , , , , , , , 
+syndrome de la tête qui explose,Q3106901, , , , , , , , , , , , , , ,C3163857, , ,https://fr.wikipedia.org/wiki/Syndrome_de_la_t%C3%AAte_qui_explose,"trouble du sommeil, totalement bénin, faisant partie des parasomnies", 
+Q65546308,Q65546308, , , , , , , , , , , , , , , , , , , , 
+hémophilie C,Q1393718,hémorragie,Q166019, , , , , , , , , , ,286.2,D68.1,C0015523,D005173,C84705, ,maladie,"Syndrome de Rosenthal,déficit congénital en facteur XI"
+Q69529607,Q69529607, , , , , , , , , , , , , , , , , , ,article scientifique publié en 1973, 
+éosinophilie familiale,Q30314825, , , , , , , , , , , , , , ,C0272192,C562722, , , , 
+Q81154670,Q81154670, , , , , , , , , , , , , , , , , , , , 
+Q85760447,Q85760447, , , , , , , , , , , , , , , , , , , , 
+mort par ventilateur,Q303331, , , , , , , , , , , , , , , , , ,https://fr.wikipedia.org/wiki/Mort_par_ventilateur, , 
+Fibrose,Q605709, , , , , , , , , , , , , , ,C3550476,D005355, ,https://fr.wikipedia.org/wiki/Fibrose,pathologie, 
+lymphome folliculaire,Q123251, , , , , , , , , , , , , , ,C0024301,D008224,C3209,https://fr.wikipedia.org/wiki/Lymphome_folliculaire, , 
+exposition au formaldéhyde,Q21174328,"irritation de la gorge,irritation des voies respiratoires,irritation nasale,irritation oculaire,larmoiement,sibilance,toux","Q11820606,Q12153824,Q21112283,Q21118859,Q35805,Q517104,Q7798315", , , , , , ,méthanal,Q161210, , , , , ,C537268, , , , 
+gangrène de Fournier,Q616449, , , , , , , , , , , , , , , ,D018934, ,https://fr.wikipedia.org/wiki/Gangr%C3%A8ne_de_Fournier, , 
+fugue dissociative,Q951639, , , , , , , , , , , , , , , , , ,https://fr.wikipedia.org/wiki/Fugue_dissociative, , 
+Galactorrhée,Q278515, , , , , , , , , , , , ,"611.6,676.6", ,"C0235660,C3665358",D005687,C113343,https://fr.wikipedia.org/wiki/Galactorrh%C3%A9e, , 
+hyperprolactinémie associée à un galactorrhée,Q5517828, , , , , , , , , , , , , , , ,C535402, , , , 
+syndrome de «gas bloat»,Q55790276, , , , , , , , , , , , , , ,C2930966,C535647, , , , 
+koro,Q1080699, , , , ,kuru,Q274615, , , , , , , , , ,D016911, ,https://fr.wikipedia.org/wiki/Koro_(syndrome),anxiété massive liée à la conviction que le pénis est en train de se rétracter dans l'abdomen et de disparaître, 
+Acrodermatite papuleuse infantile de Gianotti-Crosti,Q475972, , , , , , , , , , , , , , , , , ,https://fr.wikipedia.org/wiki/Acrodermatite_papuleuse_infantile_de_Gianotti-Crosti, ,Gianotti-Crosti
+acrogérie,Q4675775, , , , , , , , , , , , , , , ,C538187, , , , 
+Q95444789,Q95444789, , , , , , , , , , , , , , , , , , , , 
+palmes et plantes chevelues,Q5639639, , , , , , , , , , , , , , ,C1841694,C535620, , , , 
+hallux valgus,Q852574, , , , , , , , , , , , , , ,"C0006386,C0018536",D006215, ,https://fr.wikipedia.org/wiki/Hallux_valgus,déformation du pied,Oignon
+Q72887210,Q72887210, , , , , , , , , , , , , , , , , , , , 
+ataxie cérébelleuse précoce avec conservation des réflexes tendineux,Q5656137, , , , , , , , , , , , ,334.3,G11.1,C0393520,C535633, , , ,Ataxie de Harding
+tumeur cardiaque de l'enfant,Q3542028, , , , , , , , , , , , , ,"C38.0,D15.1",C4274356, , ,https://fr.wikipedia.org/wiki/Tumeurs_cardiaques_de_l%27enfant, ,tumeur cardiaque pédiatrique
+Heavy Metal Poisoning,Q5695132, , , , , , , , , , , , , , , , , , , , 
+syndrome de Kasabach-Merritt,Q764185, , , , , , , , , , , , , , , ,D059885, , , , 
+hémangiome capillaire infantile,Q52771370, , , , , , , , , , , , , , ,C1865871,C535860, , , , 
+hématocolpos,Q5711155, , , , , , , , , , , , , , , ,D006399, , ,rétention de sang menstruel dans le vagin, 
+hémothorax,Q369073, , , , , , , , , , , , , , ,C0019123,D006491,C50582,https://fr.wikipedia.org/wiki/H%C3%A9mothorax,épanchement de sang dans la cavité pleurale, 
+Q37741170,Q37741170, , , , , , , , , , , , , , , , , , ,article scientifique, 
+Q83059792,Q83059792, , , , , , , , , , , , , , , , , , ,article scientifique, 
+Cercopithecine herpesvirus 1,Q1330599, , , , , , , , , , , , , , , ,D006568, ,https://fr.wikipedia.org/wiki/Herp%C3%A8s_virus_B,espèce de virus,Herpès virus B
+hétérophobie,Q849223, , , , , , , , , , , , , , , , , ,https://fr.wikipedia.org/wiki/H%C3%A9t%C3%A9rophobie,peur ou hostilité envers autrui ou envers l'hétérosexualité ou les hétérosexuels, 
+Hoquet,Q58952, , ,"(RS)-baclofène,benzonatate,chlorpromazine,triflupromazine,éther diéthylique","Q202218,Q2070778,Q407972,Q413717,Q510494", , , , , , , , ,786.8, , ,D006606,C37966,https://fr.wikipedia.org/wiki/Hoquet, ,Myoclonie phrénoglottique
+Dysplasie de la hanche chez le chien,Q1434611, , , , , , , , , , , , , , , ,D006619, , , , 
+Q70583462,Q70583462, , , , , , , , , , , , , , , , , , , , 
+histiocytose non langerhansienne,Q3136521, , , , , , , , , , , , , , ,C0019624,D015616, ,https://fr.wikipedia.org/wiki/Histiocytose_non_langerhansienne, ,"Histiocytoses non langerhansiennes,Histiocytoses non-langerhansiennes"
+virus de l'immunodéficience humaine,Q15787, , , , , , , , , , , , , , , ,D006678, ,https://fr.wikipedia.org/wiki/Virus_de_l%27immunod%C3%A9ficience_humaine,"rétrovirus infectant l'humain, cause du sida","HIV,VIH"
+rein en fer à cheval,Q1634033, , , , , , , , , , , , , , , , ,C98947, , , 
+Q83156253,Q83156253, , , , , , , , , , , , , , , , , , , , 
+Q70926359,Q70926359, , , , , , , , , , , , , , , , , , , , 
+dent de Hutchinson,Q1424702, , , , , , , , ,syphilis congénitale,Q5160454, , , , ,C0020186, , , , , 
+hyperammoniémie,Q1640868, , , , , , , , , , , , , , ,C0220994,D022124,C98950,https://fr.wikipedia.org/wiki/Hyperammoni%C3%A9mie, , 
+Q112610466,Q112610466, , , , , , , , , , , , , , , , , , , , 
+Q112610466,Q112610466, , , , , , , , , , , , , , , , , , , , 
+Q5958019,Q5958019, , , , , , , , , , , , , , ,C2609164, , , , , 
+hyperhidrose,Q935781, , ,"Q27286540,hyoscyamine","Q27286540,Q413762", , , , , , , , , , , ,D006945,C78345,https://fr.wikipedia.org/wiki/Hyperhidrose,sudation excessive,hypersudation
+hyperkaliémie,Q605259, , ,patiromer,Q21284261, , , , , , , , , , ,C0020461,D006947,C37968,https://fr.wikipedia.org/wiki/Hyperkali%C3%A9mie, , 
+hyperkératose lenticulaire persistante,Q43185102, , , , , , , , , , , , , , ,C0263420,C538377, , , ,maladie de Flegel
+Q68640538,Q68640538, , , , , , , , , , , , , , , ,D008072, , , , 
+hyperostose frontale interne,Q1641052, , , , , , , , , , , , , , ,"C0020494,C4280524,C4280525,C4280526,C4280527",D006957,C84772, , ,Hyperostosis frontalis interna
+hyperréflexie,Q1429154, , , , , , , , , , , , , , , , , ,https://fr.wikipedia.org/wiki/Hyperr%C3%A9flexie,État dans lequel les réflexes sont exagérés, 
+Q21101401,Q21101401, , , , , , , , , , , , , , , , , , , , 
+Q22303883,Q22303883, , , , , , , , , , , , , , , , , , , , 
+hyperthermie,Q242165, , ,"Q1320691,acide acétylsalicylique,acide méfénamique,ceftazidime,ciprofloxacine,céfépime,ibuprofène,naproxène,paracétamol,phénacétine,salicylamide,salicylate de magnésium tétrahydraté","Q1215575,Q1320691,Q18216,Q186969,Q20817210,Q2496906,Q2552927,Q256602,Q284321,Q419175,Q57055,Q808845", , , , , , , , ,780.6, , ,D000224,C50589,https://fr.wikipedia.org/wiki/Hyperthermie,augmentation dangereuse de la température d'un corps dûe à l'environnement,calenture
+hypertryptophanémie,Q5958803, , , , , , , , , , , , , ,E70.8,C2931837,C538393, , , , 
+Q37634646,Q37634646, , , , , , , , , , , , , , , , , , ,article scientifique, 
+hypodysfibrinogénémie,Q42417349, , , , , , , , , , , , , ,D68.2,C0272350, , , , , 
+Q48837404,Q48837404, , , , , , , , , , , , , , , , , , , , 
+Q68867580,Q68867580, , , , , , , , , , , , , , , , , , , , 
+Q55788677,Q55788677, , , , , , , , , , , , , ,G40.5, , , , , , 
+Ichthyoalleinotoxisme,Q5986402, , , , , , , , ,poisson hallucinogène,Q17077413, , , , ,C1562426, , , ,syndrome hallucinatoire après ingestion de poissons, 
+Q71419022,Q71419022, , , , , , , , , , , , , , , , , , , , 
+panniculite mésentérique,Q17048348, , , , , , , , , , , , , ,K65.8,"C0025470,C0267770", , , , ,"mésentérite rétractile,mésentérite sclérosante"
+iminoglycinurie,Q6004091, , , , , , , , , , , , ,270.8,E72.0,C0268654,C536285, , , , 
+fusion des incisives mandibulaires,Q55781136, , , , , , , , , , , , , ,K00.2,"C2931081,C3494175",C535997, , , , 
+apnée infantile,Q25324240, , , , , , , , , , , , , , , , , , , , 
+fibromatose digitale infantile,Q16917828, , , , , , , , , , , , ,238.8,M72.8,C1318562, ,C3456, , ,"Fibromatose à corps d'inclusion,Tumeur de Reye"
+carence en iode,Q18377123, , , , , , , , , , , , , , ,C0342199, , ,https://fr.wikipedia.org/wiki/Carence_en_iode, , 
+anémie ferriprive,Q954674, , ,"Ferumoxides,carboxymaltose ferrique,complexe d'hydroxyde ferrique - saccharose,complexe de gluconate ferrique de sodium,fer,fumarate ferreux,gluconate ferreux dihydraté,sulfate de fer heptahydraté","Q20817270,Q27105054,Q27290556,Q27888379,Q416370,Q47495792,Q677,Q7553318", , , , , , ,index de Mentzer,Q6817662,"280.8,280.9", ,"C0029810,C0162316",D018798,C84484,https://fr.wikipedia.org/wiki/An%C3%A9mie_ferriprive, ,"anemie ferriprive,anémies ferriprives,carence martiale"
+5p,5p, , , , , , , , , , , , , , , , , , , , 
+hémangio-endothéliome kaposiforme,Q55786078, , , , , , , , , , , , , ,D18.0,C1367420,C537007,C27510, , , 
+erythème kératolytique hivernal,Q1976193, , , , , , , , , , , , ,695.89, ,C0406756,C536155, , , ,Maladie d'Oudtshoorn
+syndrome de Kounis,Q6434647, , , , , , , , ,hypersensibilité,Q5958765, , , , ,C2609176, , , , , 
+John Langdon-Down,Q315940, , , , , , , , , , , , , , , , , ,https://fr.wikipedia.org/wiki/John_Langdon-Down,médecin britannique,"John Langdon Down,John Langdon Haydon DOWN"
+saturnisme,Q110315,"amaigrissement,anorexie,anémie,colique,constipation,douleur abdominale,encéphalopathie,fatigue,hypertension artérielle,insomnie,irritation oculaire,liseré de Burton,malnutrition,néphropathie,paralysie,pâleur du visage,tremblement","Q1054718,Q107231,Q11820606,Q12167,Q13522706,Q178436,Q183425,Q1869874,Q21111985,Q223907,Q254327,Q41861,Q5000947,Q5445,Q576349,Q718113,Q9690","BAL - British Anti Lewisite,acide méso-2,3-dimercaptosuccinique,pénicillamine","Q413968,Q421239,Q423814", , , , ,plomb,Q708,Plombémie,Q3392515,"984.8,984.9",T56.0,C0023176,D007855, ,https://fr.wikipedia.org/wiki/Saturnisme,intoxication liée au plomb,"Empoisonnement au plomb,Hüttenkatze,Intoxication au plomb,Plomburie,Saturnine"
+hypertrophie ventriculaire gauche,Q1628627, , , , , , , , , , , , , , ,C0149721,D017379, ,https://fr.wikipedia.org/wiki/Hypertrophie_ventriculaire_gauche, ,Indice de Sokolow
+Q112221244,Q112221244, , , , , , , , , , , , , , , , , , , , 
+Q72475133,Q72475133, , , , , , , , , , , , , , , , , , , , 
+Lichen folliculaire,Q6543201, , , , , , , , , , , , , ,L66.1,C0023645,C535892, , , , 
+lichen spinulosus,Q6543215, , , , , , , , , , , , , , ,C0263373, , , , , 
+lissencéphalie par mutation de LIS1,Q55999740, , , , , , , , , , , , , ,Q04.3,CL939321, , , , ,Lissencephélie associée à PAFAH1B1
+Syndrome de Nicolau,Q1335036, , , , , , , , , , , , , , , ,D065148, , , ,"Dermatite livédoïde de Nicolau,Embolia cutis medicamentosa"
+Ergine,Q2041643, , , , , , , , , , , , , , , , , ,https://fr.wikipedia.org/wiki/Ergine,composé chimique, 
+Q33486846,Q33486846, , , , , , , , , , , , , , , , , , ,article scientifique (publié 1980), 
+Q71191017,Q71191017, , , , , , , , , , , , , , , , , , , , 
+Q68918646,Q68918646, , , , , , , , , , , , , , , , , , , , 
+Q69253576,Q69253576, , , , , , , , , , , , , , , , , , , , 
+Papulose lymphomatoïde,Q1878745, , , , , , , , , , , , ,447.8,"C86.6,L41.2",C0206182,D017731,C3721,https://fr.wikipedia.org/wiki/Papulose_lymphomato%C3%AFde, , 
+myofasciite à macrophages,Q3331434, , , , , , , , , , , , , ,M60.8,C2931639,C537829, ,https://fr.wikipedia.org/wiki/Myofasciite_%C3%A0_macrophages, ,Myopathie inflammatoire
+dépression,Q42844,"dysphorie,fatigue,trouble des fonctions exécutives,état dépressif","Q290620,Q4340209,Q5419936,Q9690","5-HTP,Q27139037,Q6535779,agomélatine,amoxapine,bupropione,duloxétine,inhibiteur de la recapture de la sérotonine-noradrénaline,inhibiteur sélectif de la recapture de la sérotonine,kétamine,levosulpiride,maprotiline,neuroleptique,stabilisateur de l'humeur","Q1452256,Q208144,Q2273909,Q238544,Q243547,Q2622367,Q27139037,Q334477,Q395229,Q411932,Q418361,Q58356,Q6535779,Q834280",état dépressif,Q4340209,"Antécédents familiaux,abus de substances,maladie chronique","Q2857712,Q3184856,Q383126","facteur écologique,génétique","Q2142347,Q7162", , ,"296.2,296.20,296.3,296.30","F32,F32.9,F33,F33.9","C0024517,C0154409",D003865,C34796,https://fr.wikipedia.org/wiki/D%C3%A9pression_(psychiatrie),trouble mental,"dépression caractérisée,dépression clinique,dépression majeure"
+acidurie malonique,Q6744526, , , , , , , , , , , , , ,E72.8,C0342793,C535702, , , ,déficit en malonyl-CoA décarboxylase
+maladie de Marek,Q53843869, , , , , , , , ,infection,Q166231, , , , , ,D008380,C84884,https://fr.wikipedia.org/wiki/Maladie_de_Marek, , 
+syndrome d'hyperlaxité articulaire marfanoïde,Q55781208, , , , , , , , , , , , , , ,C0268365,C531742, , , , 
+Q57557316,Q57557316, , , , , , , , , , , , , , , , , , , , 
+maladie psychogène de masse,Q4532199, , , , , , , , , , , , , , , , , ,https://fr.wikipedia.org/wiki/Psychose_collective,phénomène où les mêmes symptômes hystériques sont ressentis par tout un groupe de personnes,syndrome psychogénique de masse
+mastocytose généralisée,Q3851644, , , , , , , , , , , , , ,D47.02,C0221013,D034721,C9235, , , 
+maladie périodique,Q1144618,inflammation,Q101991,Q26998324,Q26998324, , , , , , , , ,277.31,M04.1,C0031069,D010505,C84707,https://fr.wikipedia.org/wiki/Maladie_p%C3%A9riodique,maladie génétique autosomique récessive,"Fièvre méditerranéenne familiale,Maladie periodique"
+septicémie à méningocoque,Q18966489, , , , , , , , , , , , , , ,C0025306, , , , , 
+acrogérie type Gottron,Q6822520, , , , , , , , , , , , , , , ,C538187, , , ,acrométagérie
+aplasie müllerienne  - hypoplasie du pouce,Q6837318, , , , , , , , , , , , , , ,C2931537,C537576, , , , 
+syndrome de Pierson,Q32136429, , , , , , , , , , , , , ,N04.8,C1836876,C537185,C128145, , , 
+Q18344610,Q18344610, , , , , , , , , , , , , , ,CL1379045, , , , , 
+trouble cognitif léger,Q1472703, , , , ,trouble du déficit de l'attention,Q181923, , , , , , , , ,C0234985, , ,https://fr.wikipedia.org/wiki/Trouble_cognitif_l%C3%A9ger, , 
+MCF-7/MN1,Q54904376, , , , , , , , , , , , , , , , , , ,lignée cellulaire, 
+dysplasie de Mondini,Q1944248, , , , , , , , , , , , , , ,"C0395941,C1857078", , , ,malformation de l'oreille interne, 
+maladie de Mondor,Q555816, , , , , , , , , , , , , , , , , ,https://fr.wikipedia.org/wiki/Maladie_de_Mondor, , 
+mal chronique des montagnes,Q582189, , , , , , , , , , , , , , , , , ,https://fr.wikipedia.org/wiki/Mal_chronique_des_montagnes, ,"MCM,maladie chronique des montagnes,maladie de Monge,maladie des Andes"
+Q6911278,Q6911278, , , , , , , , , , , , , , , , , , , , 
+syndrome de Mousa-Al Din-Al Nassar,Q24977247, , , , , , , , , , , , , ,G11.8,C1849085,C536989, , , ,"Ataxie spinocérébelleuse - dystrophie cornéenne,Syndrome d'ataxie spinocérébelleuse bédouine"
+syndrome de défaillance multiviscérale,Q1193870, , , , , , , , , , , , ,995.92, , ,D009102,C75568,https://fr.wikipedia.org/wiki/Syndrome_de_d%C3%A9faillance_multivisc%C3%A9rale, ,"Défaillance multi-viscérale,Défaillance multisystémique,Défaillance multiviscérale"
+myiase,Q304601, , , , , , , , ,infection,Q166231, , ,134.0,"B87,B87.0,B87.1,B87.2,B87.3,B87.4,B87.8,B87.9",C0027030,D009198,C128400,https://fr.wikipedia.org/wiki/Myiase,troubles provoqués par la présence de larves de diptères parasites dans un corps humain ou animal, 
+Myxozoa,Q134882, , , , , , , , , , , , , , , ,D055764, ,https://fr.wikipedia.org/wiki/Myxozoa, ,"Myxozoaire,Myxozoaires"
+Q32144946,Q32144946, , , , , , , , , , , , , ,G71.2,C1854380,C538397, , , , 
+nécrophilie,Q181843, , , , , , , , , , , , , , , , , ,https://fr.wikipedia.org/wiki/N%C3%A9crophilie,attirance sexuelle pour les cadavres,"necrolagnie,necrophilie,nécrophile,thanatophilie"
+anomalie  du tube neural sensible  à l'acide folique,Q55999628, , , , , , , , , , , , , , ,"C1866558,C1866559", , , , , 
+maladie d'Alzheimer sans enchevêtrements neurofibrillaires,Q55345770, , , , , , , , , , , , , , ,C1858751,C536599, , , , 
+neurofibromatose,Q847605, , , , , , , , , , , , ,"237.7,237.70,237.71,237.72","Q85.00,Q85.01,Q85.02","C0027831,C0027832,C0162678,C0220695",D017253,"C3273,C3274,C6727",https://fr.wikipedia.org/wiki/Neurofibromatose,maladie génétique, 
+syndrome neurotoxique,Q26989045, , , , , , , , ,neurotoxicité,Q3338704, , , , , ,D020258, , , ,"Neuropathies toxiques,syndromes neurotoxiques"
+syndrome de sevrage tabagique,Q3961638, , , , , , , , ,arrêt du tabagisme,Q2462253, , , , , , , , , , 
+Q50349678,Q50349678, , , , , , , , , , , , , ,E75.2,"C0220756,C0268247,C1850363,C3179455", ,C126864, , , 
+perte auditive provoquée par le bruit,Q1475712, , , , , , , , ,traumatisme sonore,Q2230578, , ,388.12, ,"C0018781,C2751629",D006317,C34664,https://fr.wikipedia.org/wiki/Perte_d%27audition_due_au_bruit,condition dans laquelle une personne perd sa faculté à entendre du fait de l’exposition à un son de forte intensité,surdité par traumatisme sonore
+Syndrome de dysfonction non verbale,Q1417880, , , , , , , , , , , , , , , , , , ,syndrome de dysfonctionnement non verbal, 
+notalgie paresthésique,Q494925, , , , , , , , , , , , , , , , , ,https://fr.wikipedia.org/wiki/Notalgie_paresth%C3%A9sique, ,Notalgie
+Q79551283,Q79551283, , , , , , , , , , , , , , , , , , , , 
+syndrome d'hypoplasie fovéale-cataracte présénile,Q56013824, , , , , , , , , , , , , ,H26.0,C2931644,C537858, , , , 
+Q66640744,Q66640744, , , , , , , , , , , , , , , , , , , , 
+toxoplasmose oculaire,Q7830466, , , , , , , , , , , , ,130.7, ,C0040561,D014126, , , , 
+Q93860628,Q93860628, , , , , , , , , , , , , , , , , , , , 
+oligodactylie,Q975088, , , , , , , , , , , , , , ,"C0728895,C3887496", , ,https://fr.wikipedia.org/wiki/Oligodactylie, , 
+lésion d'Olney,Q2657006, , , , , , , , , , , , , , , , , , , , 
+omodysplasie type 2,Q48989848, , , , , , , , , , , , , , , , , , , , 
+Q71844033,Q71844033, , , , , , , , , , , , , , , , , , , , 
+Onychogryphose,Q2495793, , , , , , , , , , , , , , , , , ,https://fr.wikipedia.org/wiki/Onychogryphose, , 
+onychomadèse,Q7095151, , , , , , , , , , , , , ,L60.8, , , , ,décollement proximal de l'ongle, 
+onychomatricome,Q7095153, , , , , , , , , , , , , , , , , , , , 
+onychophose,Q7095156, , , , , , , , , , , , , , ,CL548940, , , , , 
+hyperalgésie induite par les opioïdes,Q17146561, , , , , , , , , , , , , , , , , , , , 
+Intoxication aux organophosphorés,Q3153685, , , , , , , , ,composé organophosphoré,Q2182492, , , , , ,D062025, ,https://fr.wikipedia.org/wiki/Intoxication_aux_organophosphor%C3%A9s, , 
+intolérance orthostatique,Q7104932, , , , , , , , , , , , , , ,C1535893,D054971, , , , 
+ostéocyte,Q913236, , , , , , , , , , , , , , , ,D010011, ,https://fr.wikipedia.org/wiki/Ost%C3%A9ocyte,cellule du tissu osseux,Osteocyte
+syndrome oto-palato-digital,Q56014249, , , , , , , , , , , , , ,Q87.0, , , , , , 
+Q48834864,Q48834864, , , , , , , , , , , , , , ,C0271614, , , , , 
+syndrome septique post-splénectomie,Q2106293, , , , , , , , , , , , , , , , , , , , 
+Maladie de Paget extramammaire,Q3077016, , , , , , , , , , , , , , , ,D010145,C3302,https://fr.wikipedia.org/wiki/Maladie_de_Paget_extramammaire, ,maladie de Paget extramammaire
+épilepsie occipitale bénigne type Panayiotopoulos,Q7130160, , , , , , , , , , , , ,345.80,G40.0, , , ,https://fr.wikipedia.org/wiki/Syndrome_de_Panayiotopoulos, , 
+Pancreas divisum,Q585140, , , , , , , , , , , , , , ,C0266270, , ,https://fr.wikipedia.org/wiki/Pancr%C3%A9as_divisum,maladie du pancréas, 
+pancréatite chronique,Q1996053, , , , , , , , , , , , , , ,"C0149521,C4014770",D050500,C84637,https://fr.wikipedia.org/wiki/Pancr%C3%A9atite_chronique, ,Pancreatite chronique
+tumeur  de la glande parathyroïde,Q7136148, , , , , , , , , , , , ,239.7,"C75.0,D35.1,D44.2",C0030521,D010282,C3313, , , 
+Q67504085,Q67504085, , , , , , , , , , , , , , , , , , , , 
+pseudolepréchaunisme de Patterson,Q7148484, , , , , , , , , , , , , ,E34.8,C1868546,C536310, , , , 
+Q26492839,Q26492839, , , , , , , , , , , , , , ,C0279583, ,C7953, , , 
+dermite périorale,Q1114789, , , , , , , , , , , , , , ,"C0263449,C0424489",D019557, , , ,dermatite péri-orale
+Q68462550,Q68462550, , , , , , , , , , , , , , , , , , , , 
+Phocomélie SC,Q52956039, , , , , , , , , , , , , , ,C0392475, ,C4681, , , 
+Phosphoglucomutase,Q425427, , , , , , , , , , , , , , , ,D010733, ,https://fr.wikipedia.org/wiki/Phosphoglucomutase,enzyme, 
+Q72071795,Q72071795, , , , , , , , , , , , , , , , , , , , 
+dermite des prés,Q1660485, , , , , , , , , , , , , , ,CL505184, , ,https://fr.wikipedia.org/wiki/Dermite_des_pr%C3%A9s,phyto-dermatose phototoxique,pastanargue
+syndrome d'interruption de la tige pituitaire,Q2092226, , , , , , , , , , , , , ,E23.6,C4053775, ,C121150, , ,rupture de la tige pituitaire
+Q70453764,Q70453764, , , , , , , , , , , , , , , , , , , , 
+pili gemini,Q7193991, , , , , , , , , , , , ,704.8,L67.8, ,C537188, , , , 
+pili torti,Q7193994, , , , , , , , , , , , , ,Q84.1,C0263491,C562485, , , ,"cheveux tourné,trichokinésis,trichotortosis"
+pityriasis lichénoïde chronique,Q2097355, , , , , , , , , , , , , , , , , , , , 
+pytyriasis lichénoïde et varioliforme aigu,Q4118211, , , , , , , , , , , , ,696.5, ,"C0162850,C0162852", , , , ,"maladie de Mucha-Habermann,pytyriasis lichénoïde  aigu"
+peste meningée,Q18924565, , , , , , , , , , , , , , , , , , , , 
+Q41561321,Q41561321, , , , , , , , , , , , , , , , , , ,article scientifique, 
+Polykystose rénale type récessif,Q3395618, , , , , , , , , , , , ,753.14,Q61.1,C0085548,D017044,C84579,https://fr.wikipedia.org/wiki/Polykystose_r%C3%A9nale_autosomique_r%C3%A9cessive,maladie génétique se manifestant par des dilatations des tubes collecteurs du rein,Polykystose renale type recessif
+infection à polyomavirus,Q19000740, , , , , , , , ,infection,Q166231, , , , , ,D027601, , , , 
+Q78258000,Q78258000, , , , , , , , , , , , , , , , , , ,article scientifique publié en 1965, 
+Q55788662,Q55788662, , , , , , , , , , , , , ,M08.0,C3890733, ,C119034, , , 
+Q70390864,Q70390864, , , , , , , , , , , , , , , , , , , , 
+Post SSRI Sexual Dysfunction,Q778642, , , , , , , , ,inhibiteur sélectif de la recapture de la sérotonine,Q334477, , , , , , , ,https://fr.wikipedia.org/wiki/Dysfonction_sexuelle_li%C3%A9e_aux_m%C3%A9dicaments_ISRS, , 
+épilepsie post-traumatique,Q7233592, , , , , , , , , , , , , , , ,D004834, , , , 
+"Postural hypotension: causes, clinical features, investigation, and management",Q33144536, , , , , , , , , , , , , , , , , , ,article scientifique, 
+déficit congénital en prékallicréine,Q55783901, , , , , , , , , , , , ,286.9,D68.8,C0272339,C562725,C99022, , ,"Carence en prékallicréine,déficit en prékallicréine"
+presbyacousie,Q1756133, , , , , , , , , , , , , , ,C0033074,D011304,C116367,https://fr.wikipedia.org/wiki/Presbyacousie, ,perte d'audition liée à l'âge
+tremblement orthostatique primaire,Q55786295, , , , , , , , , , , , , ,G25.2,C0878578,C536418, , , , 
+Q54143983,Q54143983, , , , , , , , , , , , , , , , , , ,article scientifique (publié 1974), 
+kyste trichilemmal proliférant,Q7249604, , , , , , , , , , , , , , ,C2733650, , , , , 
+prurigo nodulaire,Q3924802, , , , , , , , , , , , , , , , , , , ,Prurigo nodulaire de Hyde
+déficit en butyrylcholinestérase,Q7254644, , , , , , , , , , , , ,289.89, ,C1283400,C537417, , , , 
+pneumonie à Pseudomonas aeruginosa,Q110979474, , , , , , , , ,Pseudomonas aeruginosa,Q31856, , , , ,C0920182, , , , , 
+Q99407401,Q99407401, , , , , , , , , , , , , , , , , , , , 
+Q69493279,Q69493279, , , , , , , , , , , , , , , , , , , , 
+Pseudo-pelade de Brocq,Q3409596, , , , , , , , , , , , , , ,C0086873, , ,https://fr.wikipedia.org/wiki/Pseudo-pelade_de_Brocq, ,Pseudo-pelade de brocq
+ornithose,Q164727,"arthralgie,bradycardie,conjonctivite,constipation,céphalée,diarrhée,examen des signes méningés,fièvre,frissonnement,hypotension artérielle,hépatomégalie,insomnie,mal de gorge,malaise,myalgie,méningite,nausée,polyneuropathie,saute d'humeur,splénomégalie,toux,vomissement,épisclère","Q1129121,Q12122651,Q127076,Q1292082,Q1362864,Q1502312,Q167844,Q178436,Q186889,Q1869874,Q217111,Q2260058,Q2673323,Q275419,Q35805,Q38933,Q40878,Q474959,Q48143,Q5383279,Q683498,Q7933601,Q86","azithromycine,doxycycline,moxifloxacine","Q165399,Q422442,Q424940", , , , ,Chlamydophila psittaci,Q134275,"analyse d'urine,biopsie,examen clinique,hémogramme,immunofluorescence,méthode immuno-enzymatique ELISA,radiographie du thorax,réaction en chaîne par polymérase,tomodensitométrie","Q1283318,Q176996,Q179991,Q32566,Q332126,Q592324,Q835153,Q842424,Q886518","073,073.9",A70,C0029291,D009956,C34873,https://fr.wikipedia.org/wiki/Ornithose, ,"Chlamydiose aviaire,Psittacose"
+Q76415923,Q76415923, , , , , , , , , , , , , , , , , , , , 
+Q55781424,Q55781424, , , , , , , , , , , , , , ,C1867442,C566741, , , , 
+agénésie pulmonaire,Q16526734, , , , , , , , , , , , , , ,C0265780, ,C99028, , , 
+œdème pulmonaire de haute altitude,Q1643625, , , , , , , , , , , , ,"416.8,993.2", ,"C0340100,C0340552",C535833, ,https://fr.wikipedia.org/wiki/%C5%92d%C3%A8me_pulmonaire_de_haute_altitude, ,OPHA
+Pyaemia,Q10355575, , , , , , , , , , , , , , , , , , , , 
+épilepsie pyridoxino-dépendante,Q7263591, , , , , , , , , , , , , ,G40.8,"C1291560,C1849508",C536254, , , ,"Déficit en antiquitine,Epilepsie vitamine B6-dépendante"
+Pyrosis,Q7263711, , , , , , , , , , , , , , , , , , ,genre d'insectes, 
+hémianopsie en quadrant,Q2121869, , , , , , , , , , , , , , , , , , , ,quadranopsie
+rupture du tendon du quadriceps,Q769457, , , , , , , , , , , , , , ,C0263968, , , , , 
+tétraparésie,Q3546873, , , , , , , , , , , , , , ,C0270790, , ,https://fr.wikipedia.org/wiki/T%C3%A9trapar%C3%A9sie, ,quadriparésie
+quinisme,Q85795345, , , , ,cinchonisme,Q936656, , , , , , , , , , , , , ,quininisme
+folliculite décalvante,Q1435530, , , , , , , , , , , , ,704.09,L66.2, , , , , ,"maladie de Quinquaud,pelade décalvante"
+abcès périamygdalien,Q1586014, , , , , , , , , , , , ,475,J36,C0031157,D000039,C128322, ,complication de l'angine, 
+Q79086903,Q79086903, , , , , , , , , , , , , , , , , , ,article scientifique publié en 1961, 
+Q70769096,Q70769096, , , , , , , , , , , , , , , , , , , , 
+radiophobie,Q1781491, , , , , , , , , , , , , , , , , , ,maladie, 
+Q52009134,Q52009134, , , , , , , , , , , , , , , , , , ,article scientifique, 
+syndrome de Rapunzel,Q1362494, , , , , , , , ,Trichophagie,Q1578799, , , , , , , , , , 
+Q34719456,Q34719456, , , , , , , , , , , , , , , , , , ,article scientifique (publié 1994), 
+hypoglycémie réactionnelle,Q1408148, , , , , , , , , , , , , , , , , , , ,"hypoglycémie post prandiale,hypoglycémie réactive"
+Q69029109,Q69029109, , , , , , , , , , , , , , , , , , , , 
+lésion d'ischémie-reperfusion,Q1413991, , , , , , , , , , , , , , , ,D015427, , , , 
+trouble musculosquelettique,Q877796, , , , , , , , , , , , , , ,C0035127,D012090, , ,type de maladie professionnelle,"LATR,trouble musculo-squelettique,troubles musculo squelettiques,troubles musculosquelettiques"
+acidose respiratoire,Q2145935, , , , , , , , ,insuffisance respiratoire,Q767485, , , , ,C0001127,D000142,C50728,https://fr.wikipedia.org/wiki/Acidose_respiratoire,trouble de la régulation du pH sanguin,Acidose Respiratoire
+rétinopathie,Q550455, , ,ranibizumab,Q414270, , , , , , , , ,"362.89,362.9",H35.9,"C0035300,C0035309",D012164,"C26875,C62601",https://fr.wikipedia.org/wiki/R%C3%A9tinopathie,affection qui touche la rétine, 
+helminthiase à Rhabditida,Q4386685, , , , , , , , ,infection,Q166231, , , , , ,D017196, , , , 
+rhumatisme,Q684924, , , , , , , , , , , , , , , ,D012216,C26877,https://fr.wikipedia.org/wiki/Rhumatisme,terme non-spécifique pour désigner un problème médical affectant les articulations et les tissus conjonctifs, 
+vascularite rhumatoïde,Q7320490, , , , , , , , , , , , , , , ,D056653, , , , 
+Q85953699,Q85953699, , , , , , , , , , , , , , , , , , , , 
+maladie des cheveux annelés,Q7193987, , , , , , , , , , , , , ,Q84.1,C0263489,C537187, , , ,Pili annulati
+syndrome de Rombo,Q7362935, , , , , , , , , , , , , ,L98.8,C1867147,C535870, , , , 
+syndrome de Rudiger,Q7376987, , , , , , , , , , , , , , , , , , , , 
+syndrome de Ruzicka Goerz Anton,Q7383669, , , , , , , , , , , , , , ,C2931438,C537192, , , , 
+saccharopinurie,Q7396610, , , , , , , , , , , , ,270.7,E72.3,"C0268556,C2936921",C537218, , , , 
+sialolithiase,Q1627831, , , , , , , , , , , , ,527.5,K11.5,C0036091,D020792,C34994,https://fr.wikipedia.org/wiki/Lithiase_salivaire,formation et migration de concrétions calciques dans les voies excrétrices de la salive,lithiase salivaire
+syndrome de Satoyoshi,Q7426433, , , , , , , , , , , , , , ,C1833454,C536616, , , , 
+sciatique,Q565276, , , , , , , , , , , , ,724.3, ,C0036396,D012585, ,https://fr.wikipedia.org/wiki/Lombosciatique,douleur suivant le territoire du nerf spinal S1 ou L5, 
+Tremblante du mouton,Q170102, , , , ,Scrapy,Q368367, , , , , , , , ,C0036457,D012608, ,https://fr.wikipedia.org/wiki/Tremblante_du_mouton, ,"Scrapie,Scrapie du mouton"
+ichtyosarcotoxisme,Q3147703, , , , , , , , , , , , , , ,C2959798,D005400, ,https://fr.wikipedia.org/wiki/Ichtyosarcotoxisme,intoxication au poisson,Ichthyoalleinotoxisme
+dysplasie dermique faciale focale type 3,Q7456737, , , , , , , , , , , , , , , , , , , , 
+syndrome respiratoire aigu sévère,Q103177,"cyanose,céphalée,diarrhée,dyspnée,fièvre,hypoxie,myalgie,pneumonie atypique,syndrome d'épuisement professionnel,toux","Q105688,Q188008,Q192120,Q2633267,Q327988,Q35805,Q38933,Q40878,Q474959,Q86", , ,"Q7565786,SARS-CoV-2","Q7565786,Q82069695", , ,SARS-CoV,Q85438966,"réaction en chaîne par polymérase,tomodensitométrie","Q176996,Q32566",079.82,J12.81,C1175175,D045169,C85064,https://fr.wikipedia.org/wiki/Syndrome_respiratoire_aigu_s%C3%A9v%C3%A8re,maladie virale provoquée par le coronavirus SARS-CoV,"SRAS,Severe acute respiratory syndrome,pneumopathie atypique,syndrome respiratoire aigu sévère lié au coronavirus,syndrôme respiratoire aigu sévère,épidémie de SRAS"
+hypothermie périodique spontanée,Q7489283, , , , , , , , , , , , , ,G90.8,"C2931542,C3177318","C537594,C559045", , , , 
+Q71425503,Q71425503, , , , , , , , , , , , , , , , , , , , 
+intoxication paralytique par fruits de mer,Q2283583, , , , , , , , , , , , , , , , , , , ,IPFM
+Q24644018,Q24644018, , , , , , , , , , , , , , , , , , ,article scientifique (publié 2008), 
+cancer du sinus paranasal,Q18553357, , , , , , , , , , , , , , ,"C0280334,C0854995,C1335336,C1335337,C1335340", ,"C6014,C6017,C6018,C6019,C8193", , , 
+Q66935594,Q66935594, , , , , , , , , , , , , , , , , , , , 
+Q29982076,Q29982076, , , , , , , , , , , , , , , , , , , , 
+tumeur de la moelle épinière,Q7577474, , , , , , , , , , , , , , ,C0037930,D013120,C3381, , , 
+choc spinal,Q2298453, , , , , , , , , , , , , , ,"C0597503,CL495135", , , , , 
+spirochétose,Q3493588, , , , , , , , ,"Spirochaetales,infection","Q166231,Q221315", , , , ,C0037974,D013145, ,https://fr.wikipedia.org/wiki/Spiroch%C3%A9tose,maladies due aux spirochètes,infection à spirochète
+tumeur de la rate,Q7578547, , , , , , , , , , , , , , ,C0037999,D013160,C3383, , , 
+Anomalie de Sprengel,Q1850576, , , , , , , , , , , , , ,Q74.0,C0152438,C535802, ,https://fr.wikipedia.org/wiki/Anomalie_de_Sprengel, , 
+Q85949352,Q85949352, , , , , , , , , , , , , , , , , , , , 
+fente sternale,Q3952108, , , , , , , , , , , , ,756.3,Q76.7,"C0265696,C2931507",C537489, , , , 
+pneumonie à streptocoques B,Q18966998, , , , , , , , , , , , , , ,C0348801, , , , , 
+Q94256957,Q94256957, , , , , , , , , , , , , , , , , , , , 
+Q40870759,Q40870759, , , , , , , , , , , , , , , , , , ,article scientifique publié le 1 janvier 1977, 
+Q37879130,Q37879130, , , , , , , , , , , , , , , , , , ,article scientifique, 
+Q58866604,Q58866604, , , , , , , , , , , , , , , , , , , , 
+grippe porcine,Q36855,"diarrhée,léthargie,nausée,vomissement","Q127076,Q15637420,Q186889,Q40878","oseltamivir,zanamivir","Q146075,Q211509", , , , , , , , , , ,C2076600,D007251,C80444,https://fr.wikipedia.org/wiki/Grippe_porcine,maladie respiratoire provoquée par un virus grippal infectant les cochons,"Fievre porcine,Fièvre porcine"
+chorée de Sydenham,Q522163,chorée,Q1076421, , , , , , ,infection,Q166231, , ,392,"I02.0,I02.9",C0152113, , ,https://fr.wikipedia.org/wiki/Chor%C3%A9e_de_Sydenham,"mouvements involontaires et contractions des muscles du tronc et des extrémités après une infection à streptocoques bêta-hémolytique du groupe A, avec fièvre",danse de Saint Guy
+syncope,Q180007, , , , , , , , , , , , , , ,C0039070,D013575,C35053,https://fr.wikipedia.org/wiki/Syncope_(m%C3%A9decine), ,Samba
+Synéchie de l'iris,Q1811947, , , , , , , , , , , , , , , , , , , ,Synechie
+synesthésie,Q13258, , , , ,"cénesthésie,cénestopathie","Q247808,Q3919140", , , , , , , , ,C0233778,C562460, ,https://fr.wikipedia.org/wiki/Synesth%C3%A9sie,phénomène neurologique par lequel deux ou plusieurs sens sont associés, 
+ostéochondromatose synoviale,Q17152478, , , , , , , , , , , , , , ,C0029427, , , , , 
+syringobulbie,Q3962039, , , , , , , , , , , , , , , , , ,https://fr.wikipedia.org/wiki/Syringobulbie, , 
+dyskinésie tardive,Q1546328, , ,"Q27089118,Tétrabénazine","Q27089118,Q413050",infirmité motrice cérébrale dyskinétique,Q4813631, , , , , , , , ,C0686347,D000071057, ,https://fr.wikipedia.org/wiki/Dyskin%C3%A9sie_tardive, ,Dyskinesie tardive
+trouble du goût,Q18975305, , , , , , , , , , , , , , ,C4025879,D013651, , , , 
+taurodontisme,Q3496241, , , , , , , , , , , , , ,K00.2,"C0266039,C4280616",C536946, , , , 
+Q55784391,Q55784391, , , , , , , , , , , , , ,Q99.8,C3553858, , , , , 
+Q75725394,Q75725394, , , , , , , , , , , , , , , , , , , , 
+Q71077938,Q71077938, , , , , , , , , , , , , , , , , , , , 
+Q73481256,Q73481256, , , , , , , , , , , , , , , , , , , , 
+acouphène,Q192309, , , , , , , , , , , , , , ,C0040264,D014012,C50772,https://fr.wikipedia.org/wiki/Acouph%C3%A8ne,sensation auditive,"accouphene,accouphène,acouphene,acouphènes,bruit fantôme,tinnitus"
+infections à Togaviridae,Q19000422, , , , , , , , ,infection,Q166231, , , , , ,D014036,C85192, , , 
+torsades de pointe,Q1625433, , , , , , , , , , , , , , ,C0040479,D016171,C50779,https://fr.wikipedia.org/wiki/Torsades_de_pointe, ,TdP
+Torulopsis,Q10700529, , , , , , , , , , , , , , , , , , ,genre de champignons, 
+tracheobronchomalacie,Q7831316, , , , , , , , , , , , , , ,C0340231,D055089, , , , 
+trachéobronchomégalie,Q7831318, , , , , , , , , , , , ,748.3,J98.0,"C0040587,C2713583",D014137,C85196, , ,syndrome de Mounier Kuhn
+érythroblastopénie transitoire de l'enfance,Q7834273, , , , , , , , , , , , ,284.81,D60.1,C0238478,C536980,C131683, ,forme d'anémie, 
+Q43703023,Q43703023, , , , , , , , , , , , , , , , , , ,article scientifique (publié 1971), 
+tréponématose,Q1243869, , , , , , , , ,infection,Q166231, , , , , ,D014211,C85197,https://fr.wikipedia.org/wiki/Tr%C3%A9pon%C3%A9matose,Catégorie de maladies bactériennes,tréponémose
+trichostasis spinulosa,Q7841016, , , , , , , , , , , , , , ,C0263487,C536558, , , , 
+Q66896718,Q66896718, , , , , , , , , , , , , , , , , , , , 
+doigt à ressaut,Q2093127, , , , , , , , , , , , , , ,C0410060,D052582, ,https://fr.wikipedia.org/wiki/Doigt_%C3%A0_ressaut,affection médicale, 
+triploïdie,Q504558, , , , , , , , , , , , , , , , , , , , 
+Q55781609,Q55781609, , , , , , , , , , , , , , ,C1860403,C536923, , , , 
+Angiome en touffes,Q2849604, , , , , , , , , , , , ,215.9,D18.0,C0346073,C536924,C4487,https://fr.wikipedia.org/wiki/Angiome_en_touffes, ,"Angioblastome de Nakagawa,Angiome En Touffes"
+disomie uniparentale,Q1207929, , , , , , , , , , , , , , , ,D024182, ,https://fr.wikipedia.org/wiki/Disomie_uniparentale, , 
+calcul urinaire,Q3650513, , , , , , , , , , , , , , , ,D014545, , , , 
+maladies de l'uvée,Q18555950, , , , , , , , , , , , , , ,C0042161,D014603,C26908, , , 
+vaginisme,Q1128431, , , , ,vaginite,Q676191, , , , , , , ,N94.2,C2004487,D052065,C78703,https://fr.wikipedia.org/wiki/Vaginisme, , 
+hypervalinémie,Q5958808, , , , , , , , , , , , , , ,C0268573,C536524, , , , 
+Entérocoque résistant à la vancomycine,Q2610066, , , , , , , , ,infection,Q166231, , , , ,C1320184,D065507, ,https://fr.wikipedia.org/wiki/Ent%C3%A9rocoque_r%C3%A9sistant_%C3%A0_la_vancomycine, , 
+infection à virus varicelle-zona,Q55779917, , ,aciclovir,Q147101, , , , ,infection,Q166231, , ,052.7, ,C0586989,D000073618,C96407, , , 
+malaise vagal,Q2667159, , , , ,reflexe vagal,Q7908541, , , , , , , , , ,D019462, ,https://fr.wikipedia.org/wiki/Malaise_vagal, ,"Choc vagal,Syncope vagale,Syndrome vagal"
+Q69740869,Q69740869, , , , , , , , , , , , , , , , , , , , 
+dysfonctionnement vestibulo-cochléaire progressif familial,Q7923466, , , , , , , , , , , , , , ,"C1860432,C2931176",C536346, , , , 
+maladie virale à ARN,Q18967413, , , , , , , , ,infection,Q166231, , , , , ,D012327,C34395, , , 
+carence en vitamine B6,Q7263598, , , , , , , , , , , , , , ,"C0936215,C1527330",D026681,C85221, , ,carrence en pyridoxine
+avitaminose E,Q7936965, , , , , , , , , , , , , , ,C0042875,D014811, , , , 
+vulvodynie,Q1571008, , , , , , , , , , , , ,625.70, ,CL495312,D056650, ,https://fr.wikipedia.org/wiki/Vulvodynie, , 
+maladie de Waldmann,Q7961531, , , , , , , , , , , , ,457.1,I89.0,"C0024215,C0267372,C2931241",C536567, , , ,Lymphangiectasie intestinale primitive
+dégénérescence wallérienne,Q1753825, , , , , , , , , , , , , , , ,D014855, ,https://fr.wikipedia.org/wiki/D%C3%A9g%C3%A9n%C3%A9rescence_wall%C3%A9rienne, ,Degenerescence wallerienne
+rate flottante,Q7967227, , , , , , , , , , , , , , , ,D050805, , , , 
+nécrose de Coumadine,Q1143638, , , , , , , , , , , , , , , , , , , ,"nécrose cutanée Coumadine-Induite,nécrose cutanée warfarine-induite"
+syndrome de Muckle-Wells,Q1538218, , , , , , , , , , , , ,708.8,E85.0,C0268390,D056587,C119054,https://fr.wikipedia.org/wiki/Syndrome_de_Muckle-Wells,maladie,Urticaire neutrophilique
+coqueluche,Q134859,"apnée,fatigue,fièvre,rhinorrhée,toux,vomissement","Q1115038,Q127076,Q35805,Q38933,Q754424,Q9690","déméclocycline,guaïfénésine,érythromycine","Q213511,Q2736402,Q420682", , , , ,Bordetella pertussis,Q137103, , , , ,C0006015,D014917, ,https://fr.wikipedia.org/wiki/Coqueluche,forme la plus courante de la maladie,coqueluche à Bordetella pertussis
+syndrome de déficience intellectuelle-retard de développement-contractures,Q48989140, , , , , , , , , , , , , ,G71.8,C0796200,C536703, , , , 
+cheveux laineux autosomique récessive,Q55637897, , , , , , , , , , , , , , ,C3502073,C564735, , , , 
+cheveux laineux,Q55998502, , , , , , , , , , , , , ,Q84.1,"C0343073,C0345427,C1860238,C4072835,C4072836,C4073292",C536745, , , , 
+Q55781621,Q55781621, , , , , , , , , , , , , , ,"C0272051,C1863769", , , , , 
+Xeroderma pigmentosum,Q612693, , , , , , , , , , , , , ,Q82.1,C0043346,D014983,C3452,https://fr.wikipedia.org/wiki/Xeroderma_pigmentosum, , 

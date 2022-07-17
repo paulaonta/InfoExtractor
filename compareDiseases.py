@@ -35,8 +35,8 @@ def also_known_diseases(name):
             first = False
         else:
             also_known = line[also_pos] #get the name
-            also_known_diseases = [elem.title().strip() for elem in also_known.split(",")]
-            if name.title().strip() in also_known_diseases:
+            also_known_diseases = [elem.lower().replace(" ", "") for elem in also_known.split(",")]
+            if name.lower().replace(" ", "") in also_known_diseases:
                 contains = True
                 break
 

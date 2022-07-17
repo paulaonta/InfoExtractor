@@ -1,11 +1,25 @@
 from SPARQLWrapper import SPARQLWrapper, JSON, N3, XML, CSV
 import os
 import numpy
-import csv
 from qwikidata.sparql import (get_subclasses_of_item,
                               return_sparql_query_results)
-from definitions import main_query
-from definitions import define
+from urllib.request import urlopen
+import bs4
+import csv
+from definitions import define4, define, main_query
+
+languages, sparql_query_prop, sparql_query_prop_del, codes = define()
+languages, link_first_part, link_second_part, wikipediaErrorsFile_path, errorsFile_path = define4()
+
+sparql = SPARQLWrapper("https://query.wikidata.org/")
+
+mycsv = csv.reader(open(wikipediaErrorsFile_path)) #open
+
+myFile = open(errorsFile_path, 'a')
+myErrorFile = csv.writer(myFile)
+myErrorFile.writerow(['name', 'link'])
+
+first = True
 
 def convertDictToArray(res):
     select_term = ""
@@ -28,26 +42,6 @@ def convertDictToArray(res):
 
     return first_row, array
 
-def makeQuery(query):
-    res = return_sparql_query_results(query)
-    first_row, prop = convertDictToArray(res)
-    return first_row, prop
-
-def getProperties():
-    try:
-        first_row, prop = makeQuery(sparql_query_prop)
-        first_row, prop1 = makeQuery(sparql_query_prop_del)
-
-        #remove the elements in prop1 that there are in prop
-        for elem in prop1[0]:
-            if elem in prop[0]:
-                prop[0].remove(elem)
-
-        final_prop_code = [elem.split("http://www.wikidata.org/entity/")[1] for elem in prop[0]]
-        return final_prop_code, prop
-    except:
-        print("error")
-
 def getValues(first_row, array):
     lista = []
     lista.append(array[0][0])
@@ -64,81 +58,92 @@ def getValues(first_row, array):
         lista.append(string.replace(';', ','))
     return lista
 
-languages, sparql_query_prop, sparql_query_prop_del, codes = define()
-sparql = SPARQLWrapper("https://query.wikidata.org/")
-languages = ['en', 'eu', 'ca', 'fr', 'es']
+def makeQuery(query):
+    res = return_sparql_query_results(query)
+    first_row, prop = convertDictToArray(res)
+    return first_row, prop
 
-sparql_query = ''' SELECT ?item2 ?item2Label
-                WHERE
-                {
-                ?item (wdt:P279*) wd:Q112193867. # subclass of
-                ?item2 (wdt:P31) ?item. # instance of     
-                SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". } # Helps get the label in your language, if not, then en language
-                }'''
-first_row, prop = makeQuery(sparql_query)
+def createFile(path):
+    mydirname = './' + path
+    if not os.path.exists(mydirname):
+        os.makedirs(os.path.dirname(mydirname), exist_ok=True)
 
-sparql_query = ''' SELECT ?item2 ?itemLabel 
-                        WHERE {                                    
-                           { ?item (wdt:P279*) wd:Q65091757.}
-                            UNION
-                           { ?item (wdt:P279*) wd:Q8294850.}#physiological plant disorders 
-                           UNION
-                           { ?item (wdt:P279*) wd:Q9190427.} #animal diseases
-                           UNION
-                           {?item (wdt:P279*) wd:Q207791.} 
-                           UNION
-                           {?item (wdt:P279*) wd:Q98379923.}
-                           ?item2 (wdt:P31) ?item. # instance of
-                        }'''
-first_row, prop1 = makeQuery(sparql_query)
+def getDisease(prop_code):
+    for lang in languages:
+        csv_path = 'diseases_info_' + lang + '.csv'
+        errors_path = 'errors_log_' + lang
+        first = True
+        i, errorCount = 0, 0
+        lista2 = []
 
-#get properties
-prop_code, prop2 = getProperties()
+        # create csv file for each language
+        createFile(csv_path)
+        # create file to save the errors for each language
+        createFile(errors_path)
 
-#remove the elements in prop1 that there are in prop
-for elem in prop2[0]:
-    if elem in prop[0] :
-        prop[0] = [value for value in prop[0] if value != elem]
+        # open the csv file
+        myFile = open(csv_path, 'w')
+        writer = csv.writer(myFile)
 
-#remove the elements in prop1 that there are in prop
-for elem in prop1[0]:
-    if elem in prop[0] :
-        prop[0] = [value for value in prop[0] if value != elem]
+        # for each property
+        while i < len(prop_code):
+            prop_num = prop_code[i]  # get the property
+            try:
+                sparql_query_main = main_query(prop_num, lang)
+                first_row, array = makeQuery(sparql_query_main)
 
-final_prop_code = [elem.split("http://www.wikidata.org/entity/")[1] for elem in prop[0]]
-
-for lang in languages:
-    csv_path ='./emaitza/diseases_info_' + lang + '.csv'
-    errors_path = './emaitza/errors_log_' + lang
-    first = True
-    i, errorCount = 0, 0
-    lista2 = []
-
-    # open the csv file
-    myFile = open(csv_path, 'a')
-    writer = csv.writer(myFile)
-
-    #for each property
-    while i < len(final_prop_code):
-        prop_num = final_prop_code[i] #get the property
-        try:
-            sparql_query_main = main_query(prop_num, lang)
-            first_row, array = makeQuery(sparql_query_main)
-
-            errorCount = 0
-            i += 1
-            if array[0]:  # if it is not empty
-                lista = getValues(first_row, array)
-                writer.writerow(lista)
-        except:
-            errorCount += 1
-            if errorCount == 10:
-                #append in the logger
-                myErrorFile = open(errors_path, 'a')
-                myErrorFile.write("This disease: \"" + prop[1][i] + "\"" + " (" + prop_num + ") can't be load\n")
+                if first:
+                    lista2.append(first_row)
+                    first = False
                 errorCount = 0
                 i += 1
-            #print("error")
-            pass
-    print("amaitu")
+                if array[0]:  # if it is not empty
+                    lista = getValues(first_row, array)
+                    lista2.append(lista)
+            except:
+                errorCount += 1
+                if errorCount == 10:
+                    # append in the logger
+                    myErrorFile = open(errors_path, 'a')
+                    myErrorFile.write("This disease: " + prop_num + " can't be load\n")
+                    errorCount = 0
+                    i += 1
+                print("error")
+                pass
 
+        writer.writerows(lista2)
+
+#iterate the csv file
+prop_code = []
+for line in mycsv:
+    if first:
+        first = False
+    else:
+        name_parts = line[0].split(" ")
+        index = 0
+        link_disease_part = ""
+        while index < len(name_parts):
+            if index == len(name_parts)-1:
+                link_disease_part += name_parts[index]
+            else:
+                link_disease_part += name_parts[index] + "+"
+            index += 1
+
+        link = link_first_part + link_disease_part[0:len(link_disease_part)] + link_second_part
+
+        try:
+            # open the link
+            soup = bs4.BeautifulSoup(urlopen(link), features="lxml")
+            # find tags by CSS class
+            content = soup.find("ul", class_="mw-search-results").find_all('a')[0]
+            code = content.getText().split('(')[1].split(')')[0]
+            prop_code.append(code)
+
+        except:
+            print("error: an error occurs while searching the disease")
+            # append in the logger
+            myFile = open(errorsFile_path, 'a')
+            myErrorFile = csv.writer(myFile)
+            myErrorFile.writerow([line[0], line[1]])
+            pass
+getDisease(prop_code)

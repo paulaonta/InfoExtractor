@@ -94,4 +94,15 @@ def define3():
 
     return mydirname, wiki_directory, wikiD_link_pos, wikiP_link_pos, also_pos,errors_path
 
+def define4():
+    languages = ['en', 'es', 'eu', 'fr', 'ca']
+
+    link_first_part = "https://www.wikidata.org/w/index.php?search="
+    link_second_part  = "+-article+-trial&title=Special:Search&profile=advanced&fulltext=1&advancedSearch-current={\"fields\"%3A{\"not\"%3A[\"article\"%2C\"trial\"]}}&ns0=1&ns120=1"
+    wikipediaErrorsFile_path = "./compareDiseases/errors_link_wikipedia.csv"
+    errorsFile_path = "./errors_link_wikipedia_def.csv"
+
+    return languages, link_first_part, link_second_part, wikipediaErrorsFile_path, errorsFile_path
+
+
 
