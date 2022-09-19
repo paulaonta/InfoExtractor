@@ -23,7 +23,7 @@ WARNING!!! make a copy of mydirname BEFORE running, the copy will be the data in
 
 *wikipediaLink.py --> gets a list with all the names of the diseases that are in the Wikipedia
 	**The data is store in 'WikipediaLinks' folder. There you will find for each letter:
-		***wikipedia_links_letter.csv --> we have all the diseases which start with 'letter'. We have in the .csv file, in order, the 											following: disease name, wikipedia link, if the link is redirected or not and if it's redirected the redirect link and otherwise, the wikipedia link.
+		***wikipedia_links_letter.csv --> we have all the diseases which start with 'letter'. We have in the .csv file, in order, the following: disease name, wikipedia link, if the link is redirected or not and if it's redirected the redirect link and otherwise, the wikipedia link.
 		
 		
 *removeLinks.py --> removes the repeted links that are in WikipediaLinks
