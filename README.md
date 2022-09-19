@@ -14,11 +14,11 @@ Contains the functions that are uses more than ones in different files. Also con
 
 wikidataExtractor.py 
 -----------
-Extracts for each language all the data of Wikidata.
-	**The data is store in 'results' folder. There you will find for each language:
-		** 1. disease_info_language.csv**all the data in 'language' language
-			**-diseas_info_en_nci.csv**:all the data in english + the symptoms obtained using the NCI code
-		** 2. errors_log_language**:the diseases that couldn't be loaded in 'language' language
+Extracts for each language all the data of Wikidata.  
+	**The data is store in 'results' folder. There you will find for each language:  
+		** 1. disease_info_language.csv**all the data in 'language' language  
+			**-diseas_info_en_nci.csv**:all the data in english + the symptoms obtained using the NCI code  
+		** 2. errors_log_language**:the diseases that couldn't be loaded in 'language' language  
 
 
 append2.py 
@@ -28,13 +28,14 @@ Extracts for each language all the data of Wikidata that is missing doing a quer
 
 NCI_ID.py
 -----------
-For each disease gets the symptoms using the NCI code.
+For each disease gets the symptoms using the NCI code.  
 _**WARNING!!!**_ Make a copy of mydirname BEFORE running, the copy will be the data in english and the other will be the data + the symptoms obtained using the NCI code
 
 
 wikipediaLink.py
-Gets a list with all the names of the diseases that are in the Wikipedia
-  *The data is store in 'WikipediaLinks' folder. There you will find for each letter:
+-----------
+Gets a list with all the names of the diseases that are in the Wikipedia  
+  *The data is store in 'WikipediaLinks' folder. There you will find for each letter:  
 		***wikipedia_links_letter.csv**: we have all the diseases which start with 'letter'. We have in the .csv file, in order, the following: disease name, wikipedia link, if the link is redirected or not and if it's redirected the redirect link and otherwise, the wikipedia link.
 		
 		
@@ -45,7 +46,7 @@ Removes the repeted links that are in WikipediaLinks.
 		
 compareDiseases.py
 -----------
-Compares the list of all the diseases that are in the Wikipedia with the diseases of Wikidata.
+Compares the list of all the diseases that are in the Wikipedia with the diseases of Wikidata.  
   *The result is store in "./compareDiseases/errors_link_wikipedia.csv". Here we have for each diseases of the list the ones which are NOT in Wikidata
 	
 
