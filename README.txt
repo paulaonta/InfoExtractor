@@ -26,20 +26,20 @@ WARNING!!! make a copy of mydirname BEFORE running, the copy will be the data in
 		***wikipedia_links_letter.csv --> we have all the diseases which start with 'letter'. We have in the .csv file, in order, the following: disease name, wikipedia link, if the link is redirected or not and if it's redirected the redirect link and otherwise, the wikipedia link.
 		
 		
-*removeLinks.py --> removes the repeted links that are in WikipediaLinks
+*removeLinks.py --> removes the repeted links that are in WikipediaLinks.
 	
 		
 *compareDiseases.py --> compares the list of all the diseases that are in the Wikipedia with the diseases of Wikidata.
 	**The result is store in "./compareDiseases/errors_link_wikipedia.csv". Here we have for each diseases of the list the ones which are NOT in Wikidata
 	
 
-*getDiseases.py --> tries to get the diseases which are not in Wikidata (the diseases of ./compareDiseases/errors_link_wikipedia.csv" directory) making a query in which the link is used as a filter
+*getDiseases.py --> tries to get the diseases which are not in Wikidata (the diseases of ./compareDiseases/errors_link_wikipedia.csv" directory) making a query in which the link is used as a filter.
 
 
-*remove.py --> after analysing the data this file removes diseases
+*remove.py --> after analysing the data this file removes diseases.
 
 
-*append.py --> tries to get the diseases which are not in Wikidata (the diseases of ./compareDiseases/errors_link_wikipedia.csv" directory) simulating a search of the link in the Wikidata browser
+*append.py --> tries to get the diseases which are not in Wikidata (the diseases of ./compareDiseases/errors_link_wikipedia.csv" directory) simulating a search of the link in the Wikidata browser.
 
 
 
