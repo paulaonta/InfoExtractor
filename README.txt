@@ -42,6 +42,6 @@ WARNING!!! make a copy of mydirname BEFORE running, the copy will be the data in
 *append.py --> tries to get the diseases which are not in Wikidata (the diseases of ./compareDiseases/errors_link_wikipedia.csv" directory) simulating a search of the link in the Wikidata browser.
 
 
-
+*In the trash folder are files that have not been deleted just in case
 
 		
