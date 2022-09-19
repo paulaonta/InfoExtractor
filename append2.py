@@ -81,7 +81,7 @@ def getValues(first_row, array):
 
 languages, sparql_query_prop, sparql_query_prop_del, codes = define()
 sparql = SPARQLWrapper("https://query.wikidata.org/")
-languages = ['en', 'es']#, 'eu', 'ca', 'fr', 'es']
+languages = ['en', 'eu', 'ca', 'fr', 'es']
 
 sparql_query = ''' SELECT ?item2 ?item2Label
                 WHERE
@@ -201,8 +201,8 @@ final_prop_code = remove_properties(prop)
 print(str(len(final_prop_code)))
 
 for lang in languages:
-    csv_path ='./diseases_info_' + lang + '.csv'
-    errors_path = './errors_log_' + lang
+    csv_path ='./results/diseases_info_' + lang + '.csv'
+    errors_path = './results/errors_log_' + lang
     first = True
     i, errorCount = 0, 0
     lista2 = []

@@ -74,7 +74,7 @@ def main_query(prop_num, lang):
 
 def define2():
     folder = 'diseases_info_en.csv'
-    mydirname = './' + folder
+    mydirname = './results' + folder
 
     nci_pos = 18
     symptom_pos = 2
@@ -85,12 +85,12 @@ def define2():
 
 def define3():
     folder = 'diseases_info_en.csv'
-    mydirname = './emaitza/' + folder
+    mydirname = './results/' + folder
     wiki_directory = "./wikipediaLinks/wikipedia_links_all.csv"
     wikiD_link_pos = 19
     wikiP_link_pos = 3
     also_pos = 21
-    errors_path = 'errors_link_wikipedia.csv'
+    errors_path = "./compareDiseases/errors_link_wikipedia.csv"
 
     return mydirname, wiki_directory, wikiD_link_pos, wikiP_link_pos, also_pos,errors_path
 
@@ -100,7 +100,7 @@ def define4():
     link_first_part = "https://www.wikidata.org/w/index.php?search="
     link_second_part  = "+-article+-trial&title=Special:Search&profile=advanced&fulltext=1&advancedSearch-current={\"fields\"%3A{\"not\"%3A[\"article\"%2C\"trial\"]}}&ns0=1&ns120=1"
     wikipediaErrorsFile_path = "./compareDiseases/errors_link_wikipedia.csv"
-    errorsFile_path = "./errors_link_wikipedia_def.csv"
+    errorsFile_path = "./compareDiases/errors_link_wikipedia_def.csv"
 
     return languages, link_first_part, link_second_part, wikipediaErrorsFile_path, errorsFile_path
 

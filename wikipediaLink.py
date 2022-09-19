@@ -24,8 +24,8 @@ while i < len(alphabetical_list):
     alpha = alphabetical_list[i]
     link = partial_link + "(" + alpha + ")"
     #create a file to save all links for each letter
-    folder = 'wikipedia_links_' + alpha +'.csv'
-    mydirname = wiki_directory + "/" + folder
+    file_name = 'wikipedia_links_' + alpha +'.csv'
+    mydirname = wiki_directory + "/" + file_name
     createFile(mydirname)
 
     # open the csv file

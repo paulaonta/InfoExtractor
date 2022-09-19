@@ -75,8 +75,8 @@ for line in mycsv_wikipedia:
             line.insert(wikiP_link_pos + 1, "Yes")
         rows.append(line)
 
-file = open(wiki_directory, 'w')
-writer = csv.writer(file)
+file_name = open(wiki_directory, 'w')
+writer = csv.writer(file_name)
 writer.writerows(rows)
 
 #get diseases which are in wikipedia but not in wikidata

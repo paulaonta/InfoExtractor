@@ -1,6 +1,6 @@
 import csv
 
-wiki_directory = "./errors_link_wikipedia.csv"
+wiki_directory = "./compareDiseases/errors_link_wikipedia.csv"
 
 def is_repeted(text, i):
     mycsv_wikidata = csv.reader(open(wiki_directory))

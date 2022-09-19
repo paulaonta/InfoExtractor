@@ -70,8 +70,8 @@ def createFile(path):
 
 def getDisease(prop_code):
     for lang in languages:
-        csv_path = 'diseases_info_' + lang + '.csv'
-        errors_path = 'errors_log_' + lang
+        csv_path = './results/diseases_info_' + lang + '.csv'
+        errors_path = './results/errors_log_' + lang
         first = True
         i, errorCount = 0, 0
         lista2 = []

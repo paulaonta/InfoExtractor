@@ -105,12 +105,15 @@ def createFile(path):
 languages, sparql_query_prop, sparql_query_prop_del, codes = define()
 sparql = SPARQLWrapper("https://query.wikidata.org/")
 
+folder = "./results"
+createDirectory(folder)
+
 #get properties
 prop_code, prop = getProperties()
 #for each language get info
 for lang in languages:
-    csv_path ='diseases_info_' + lang + '.csv'
-    errors_path = 'errors_log_' + lang
+    csv_path =folder + 'diseases_info_' + lang + '.csv'
+    errors_path = folder + 'errors_log_' + lang
     first = True
     i, errorCount = 0, 0
     lista2 = []

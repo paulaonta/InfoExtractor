@@ -5,10 +5,10 @@ import csv
 from qwikidata.sparql import (get_subclasses_of_item,
                               return_sparql_query_results)
 
-path = "./errors_link_wikipedia.csv"
+path = "./compareDiseases/errors_link_wikipedia.csv"
 diseases_link_pos = 1
 codes = ["disease", "symptoms", "treatment", "differentFrom", "risk", "cause", "diagnosis"]
-languages = [ 'en'] #
+languages = ['en', 'eu', 'ca', 'fr', 'es']
 
 def convertDictToArray(res):
     select_term = ""
@@ -66,8 +66,8 @@ for line in mycsv_wikipedia:
         while i < len(languages):
             errorCount = 0
             lang = languages[i]
-            csv_path = 'diseases_info_' + lang + '.csv'
-            errors_path = 'errors_log_' + lang
+            csv_path = './results/diseases_info_' + lang + '.csv'
+            errors_path = './results/errors_log_' + lang
 
             # open the csv file
             myFile = open(csv_path, 'a')
@@ -89,12 +89,10 @@ for line in mycsv_wikipedia:
             '''
             try:
                 first_row, array = makeQuery(query)
-                print(array)
                 errorCount = 0
                 i += 1
                 if array[0]:  # if it is not empty
                     lista = getValues(first_row, array)
-                    print(lista)
                     writer.writerow(lista)
 
             except:

@@ -22,7 +22,8 @@ def listToString(s):
    # return string
    return str1
 
-#open csv file
+#open csv file (make a copy of mydirname BEFORE, the copy will be the data in english and
+#the other will be the data + the symptoms obtained using the NCI code)
 mycsv = csv.reader(open(mydirname))
 
 csv_array = []
