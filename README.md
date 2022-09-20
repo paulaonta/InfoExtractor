@@ -47,13 +47,13 @@ Removes the repeted links that are in WikipediaLinks.
 		
 compareDiseases.py
 -----------
-Compares the list of all the diseases that are in the Wikipedia with the diseases of Wikidata.  
-The result is store in **"./compareDiseases/errors_link_wikipedia.csv"**. Here we have for each disease of the list the ones which are **NOT** in Wikidata
+Compares the list of all the diseases that are in the Wikipedia with our data.
+The result is store in **"./compareDiseases/errors_link_wikipedia.csv"**. Here we have for each disease of the list the ones which are **NOT** in our data.
 	
 
 getDiseases.py 
 -----------
-Tries to get the diseases which are not in Wikidata (the diseases of ./compareDiseases/errors_link_wikipedia.csv" directory) making a query in which the link is used as a filter.
+Tries to get the diseases which are not in our data (the diseases of "./compareDiseases/errors_link_wikipedia.csv" directory) making a query in which the link is used as a filter.
 
 
 remove.py 
@@ -63,7 +63,7 @@ After analysing the data this file removes diseases.
 
 append.py
 -----------
-Tries to get the diseases which are not in Wikidata (the diseases of ./compareDiseases/errors_link_wikipedia.csv" directory) simulating a search of the link in the Wikidata browser.
+Tries to get the diseases which are not in our data (the diseases of "./compareDiseases/errors_link_wikipedia.csv" directory) simulating a search of the link in the Wikidata browser. If the disease isn`t in Wikidata, it's stored in **"./compareDiseases/errors_link_wikipedia_def.csv"**.
 
 ---
 
