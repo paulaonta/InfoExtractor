@@ -1,7 +1,7 @@
 InfoExtractor
 =======
 
-**InfoExtractor** is a tool which extracts the differents diseases of Wikidata in 5 different languages (English, Spanish, Basque, Catalan, Italian).  
+**InfoExtractor** is a tool which extracts the differents diseases of Wikidata in 5 different languages (English, Spanish, Basque, Catalan, French).  
 
 For each language and disease we store in a .csv file the following (in orden): disease name, disease code, symptoms, symptom codes, treatments, treatment codes, 'different from' property values and their codes, risks, risk codes, causes, cause codes, different diagnosis, different diagnosis codes, ICD-9, ICD-10, UMLS, MESH, NCI, Wikipedia Link, the description and the different names of the disease.
 In the English language we also have the symptoms obtained using the NCI code.
