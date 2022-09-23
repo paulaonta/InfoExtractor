@@ -58,7 +58,7 @@ Tries to get the diseases which are not in our data (the diseases of "./compareD
 
 remove.py 
 -----------
-After analysing the data this file removes diseases.
+After analysing the data this file removes diseases, especially plant and animal diseases.
 
 
 append.py
@@ -67,4 +67,4 @@ Tries to get the diseases which are not in our data (the diseases of "./compareD
 
 ---
 
-In the **trash folder** are files that have not been deleted just in case
+In the **trash folder** are files that have not been deleted just in case. 
